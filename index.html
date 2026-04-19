@@ -10,6 +10,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
+        /* Smooth scrolling for the whole page */
+        html { scroll-behavior: smooth; }
         body { font-family: 'Inter', sans-serif; background-color: #FAF9F6; color: #1C1C1C; line-height: 1.6; }
         h1, h2, h3, h4, .serif { font-family: 'Bodoni Moda', serif; }
         .accent-gold { color: #9A7B4F; }
@@ -18,21 +20,27 @@
         .fade-in { animation: fadeIn 1.5s ease-in; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         .magazine-dropcap::first-letter { font-family: 'Bodoni Moda'; font-size: 3rem; float: left; margin-right: 8px; color: #9A7B4F; line-height: 1; }
+        
+        /* Sticky Navigation Styling */
+        nav { position: sticky; top: 0; background: rgba(250, 249, 246, 0.95); z-index: 50; backdrop-filter: blur(5px); }
     </style>
 </head>
 <body class="fade-in">
 
-    <nav class="max-w-7xl mx-auto px-8 py-10 flex justify-between items-center border-b border-subtle">
+    <nav class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center border-b border-subtle">
         <div class="text-2xl font-bold serif tracking-tighter italic">S.E.A.</div>
-        <div class="hidden md:flex space-x-10 text-[10px] uppercase tracking-[0.3em] font-medium text-stone-500">
-            <a href="https://drive.google.com/file/d/1lHbLoWMKyd8tCLMrHibKeRJj0s56x9yf/view?usp=sharing" target="_blank" class="hover:text-black transition underline-offset-8 hover:underline">The Dossier (CV)</a>
-            <a href="mailto:simiajayi08@gmail.com" class="hover:text-black transition underline-offset-8 hover:underline">The Brief (Contact)</a>
-            <a href="https://bit.ly/4kQR907" target="_blank" class="hover:text-black transition underline-offset-8 hover:underline">The Network (LinkedIn)</a>
-            <a href="https://linktr.ee/simiajayi" target="_blank" class="hover:text-black transition underline-offset-8 hover:underline">The Ecosystem (Links)</a>
+        <div class="hidden lg:flex space-x-8 text-[9px] uppercase tracking-[0.2em] font-semibold text-stone-500">
+            <a href="#about" class="hover:text-black transition">The Persona</a>
+            <a href="#metrics" class="hover:text-black transition">Performance</a>
+            <a href="#case-studies" class="hover:text-black transition">Strategic Notes</a>
+            <a href="#footprint" class="hover:text-black transition">Footprint</a>
+            <a href="#publications" class="hover:text-black transition">Papers</a>
+            <span class="text-stone-200">|</span>
+            <a href="https://drive.google.com/file/d/1X-D5yD6Gz5K0zU_yWJ_oR5B3uX-lC4rW/view?usp=sharing" target="_blank" class="accent-gold hover:underline">Download CV</a>
         </div>
     </nav>
 
-    <header class="max-w-5xl mx-auto px-8 py-24">
+    <header id="about" class="max-w-5xl mx-auto px-8 py-24">
         <img src="https://drive.google.com/thumbnail?id=1nuJ8xuejohzVU00FBkd5sJHUx-twLgt-&sz=w500" 
              alt="SEA Logo" 
              class="w-24 h-24 mb-10 rounded-full border border-stone-200 shadow-sm mx-auto md:mx-0">
@@ -45,17 +53,17 @@
                 Law Student | Business Strategist | Brand Architect
             </p>
             <p class="text-lg italic text-stone-500 serif tracking-wide border-l-2 border-stone-200 pl-4">
-                The Confluence of Jurisprudence, Brand Architecture & Disciplined Elegance.
+                The Confluence of Jurisprudence, Brand Architecture & Disciplined Elegance. [cite: 1, 31]
             </p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-12 items-start mb-16">
             <div class="space-y-6">
                 <p class="text-lg text-stone-700 font-light leading-relaxed magazine-dropcap">
-                    <span class="font-semibold text-black">Similoluwa Esther Ajayi — Olóyè Ayabíàdé</span>, popularly known as <span class="font-semibold text-black">"AjebutterExtraordinaire"</span> is a legal scholar and strategic brand architect specializing in legal innovation, digital presence, and disciplined thought leadership. 
+                    <span class="font-semibold text-black">Similoluwa Esther Ajayi — Olóyè Ayabíàdé</span>, popularly known as <span class="font-semibold text-black">"AjebutterExtraordinaire"</span> is a legal scholar and strategic brand architect specializing in legal innovation, digital presence, and disciplined thought leadership. [cite: 1, 3]
                 </p>
                 <p class="text-md text-stone-600 font-light leading-relaxed">
-                    Currently reading Law at Afe Babalola University, Similoluwa operates at the intersection of Traditional Jurisprudence and Modern Innovation. She institutionalizes the "Soft Life" as a rigorous discipline of high-performance habits, structured content systems, and reputational capital.
+                    Currently reading Law at Afe Babalola University with a First Class standing (4.66 CGPA), Similoluwa operates at the intersection of Traditional Jurisprudence and Modern Innovation. [cite: 5, 6, 7]
                 </p>
             </div>
             <div class="bg-stone-100 p-8 rounded-sm">
@@ -63,229 +71,111 @@
                     "Excellence is not an act, but a habit. I am committed to raising a generation where character meets competence and influence is driven by intentionality."
                 </blockquote>
                 <div class="text-[10px] uppercase tracking-widest font-bold text-stone-400">
-                    📍 Based in Nigeria | Open to Global Mandates
-                </div>
-            </div>
-        </div>
-
-        <div class="border-t border-subtle pt-12">
-            <h2 class="text-xs uppercase tracking-[0.4em] mb-8 text-stone-400 font-bold">📌 Core Competencies</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="serif italic text-xl mb-4 text-black text-black">Skills</h3>
-                    <ul class="space-y-3 text-sm text-stone-600 font-medium font-medium">
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Legal Research & Policy Analysis</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Brand Architecture & Digital Strategy</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Content Engineering & Editorial Design</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Cross‑disciplinary Problem Solving</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="serif italic text-xl mb-4 text-black text-black">Applications</h3>
-                    <ul class="space-y-3 text-sm text-stone-600 font-medium font-medium">
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Persuasive Legal Debate</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> AI‑augmented Research</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Strategic Communication Planning</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Behavioral & Contextual Branding</li>
-                    </ul>
+                    📍 Magodo Phase II, Lagos | Open to Global Mandates [cite: 2]
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="max-w-6xl mx-auto px-8 py-24 bg-onyx text-white rounded-sm">
+    <section id="metrics" class="max-w-6xl mx-auto px-8 py-24 bg-onyx text-white rounded-sm">
         <div class="grid md:grid-cols-2 gap-16">
             <div class="bg-white p-8 border border-stone-800 text-black shadow-2xl">
                 <h3 class="serif text-xl mb-1 accent-gold">Pinterest Global Reach</h3>
-                <p class="text-[9px] uppercase tracking-widest text-stone-400 mb-8 font-bold">Performance Archive: Real-Time Data</p>
+                <p class="text-[9px] uppercase tracking-widest text-stone-400 mb-8 font-bold">Performance Archive: April 2026</p>
                 
                 <div class="grid grid-cols-2 gap-y-8 gap-x-4">
-                    <div>
-                        <p class="text-[10px] uppercase tracking-tighter text-stone-400 mb-1">Impressions</p>
-                        <p class="text-3xl font-light">361.5k</p>
-                    </div>
-                    <div>
-                        <p class="text-[10px] uppercase tracking-tighter text-stone-400 mb-1">Total Audience</p>
-                        <p class="text-3xl font-light">270.4k</p>
-                    </div>
-                    <div>
-                        <p class="text-[10px] uppercase tracking-tighter text-stone-400 mb-1">Engagements</p>
-                        <p class="text-3xl font-light">26.3k</p>
-                    </div>
-                    <div>
-                        <p class="text-[10px] uppercase tracking-tighter text-stone-400 mb-1">Saves</p>
-                        <p class="text-3xl font-light">5.46k</p>
-                    </div>
+                    <div><p class="text-[10px] uppercase tracking-tighter text-stone-400 mb-1">Impressions</p><p class="text-3xl font-light">522.8k</p></div>
+                    <div><p class="text-[10px] uppercase tracking-tighter text-stone-400 mb-1">Total Audience</p><p class="text-3xl font-light">370.8k</p></div>
+                    <div><p class="text-[10px] uppercase tracking-tighter text-stone-400 mb-1">Engagements</p><p class="text-3xl font-light">38.9k</p></div>
+                    <div><p class="text-[10px] uppercase tracking-tighter text-stone-400 mb-1">Saves</p><p class="text-3xl font-light">8.33k</p></div>
                     <div class="col-span-2 border-t border-stone-100 pt-6 mt-2">
                         <div class="flex justify-between items-center mb-3">
                             <span class="text-[10px] uppercase tracking-tighter text-stone-500 font-bold">Engaged Audience</span>
-                            <span class="text-lg font-medium">20.7k</span>
+                            <span class="text-lg font-medium">30.5k</span>
                         </div>
                         <div class="flex justify-between items-center">
                             <span class="text-[10px] uppercase tracking-tighter text-stone-500 font-bold">Outbound Clicks</span>
-                            <span class="text-lg font-medium">45</span>
+                            <span class="text-lg font-medium">179</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="space-y-10">
+            <div id="case-studies" class="space-y-10">
                 <h2 class="text-xs uppercase tracking-[0.4em] text-stone-500 font-bold">2️⃣ Selected Case Studies & Strategic Notes</h2>
                 
                 <div class="group">
-                    <h4 class="serif text-xl mb-2 accent-gold italic">Brand Repositioning</h4>
+                    <h4 class="serif text-xl mb-2 accent-gold italic">Intra and Inter-University Litigation</h4>
                     <p class="text-sm text-stone-400 leading-relaxed font-light">
-                        Architected a strategic pivot for a high-traffic digital platform, transitioning content frameworks from lifestyle-centric to high-authority professional identity. Resulted in a measurable expansion of executive-level reach.
+                        Counsel in the National Maritime Moot Competition and Lead Counsel for Aequitas Chamber. Researcher and Legal Drafter for the National Data Protection Moot Competition.
                     </p>
                 </div>
 
                 <div class="group border-t border-stone-800 pt-6">
-                    <h4 class="serif text-xl mb-2 accent-gold italic">Law-Tech Community Scaling</h4>
+                    <h4 class="serif text-xl mb-2 accent-gold italic">LSS Opportunity & Career Desk</h4>
                     <p class="text-sm text-stone-400 leading-relaxed font-light">
-                        Building a law-tech thought platform across LinkedIn & Pinterest. Developed user-literacy frameworks for legal-tech research tools. Authored the "Response Protocol" currently utilized for strategic international stakeholder correspondence.
+                        Initiated the centralized LSS Opportunity and Career Development Desk at ABUAD, bridging the gap between students and professional scholarships and career positioning.
                     </p>
                 </div>
 
                 <div class="group border-t border-stone-800 pt-6">
-                    <h4 class="serif text-xl mb-2 accent-gold italic">Early-Stage KYC Strategy</h4>
+                    <h4 class="serif text-xl mb-2 accent-gold italic">Early-Stage KYC Strategy (NECore Technologies)</h4>
                     <p class="text-sm text-stone-400 leading-relaxed font-light">
-                        Provided high-level strategic advisory for an early-stage KYC startup, focusing on user onboarding compliance and brand trust architecture.
+                        Provided strategic advisory for NECore Technologies, focused on user onboarding compliance and brand trust architecture.
                     </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-20 pt-16 border-t border-stone-800">
-            <h2 class="text-xs uppercase tracking-[0.4em] mb-10 text-stone-500 font-bold text-center">3️⃣ Forward Thesis: Current Intellectual Focus</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center px-4 border-r border-stone-800 last:border-0">
-                    <p class="text-[11px] text-stone-300 font-light uppercase tracking-widest uppercase tracking-widest">Digital identity & privacy in emerging economies</p>
-                </div>
-                <div class="text-center px-4 border-r border-stone-800 last:border-0">
-                    <p class="text-[11px] text-stone-300 font-light uppercase tracking-widest uppercase tracking-widest">Law as infrastructure, not just enforcement</p>
-                </div>
-                <div class="text-center px-4 border-r border-stone-800 last:border-0">
-                    <p class="text-[11px] text-stone-300 font-light uppercase tracking-widest uppercase tracking-widest">Personal branding as reputational capital</p>
-                </div>
-                <div class="text-center px-4">
-                    <p class="text-[11px] text-stone-300 font-light uppercase tracking-widest uppercase tracking-widest">The future of African legal-tech ecosystems</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-8 py-24">
+    <section id="footprint" class="max-w-6xl mx-auto px-8 py-24">
         <h2 class="serif text-3xl italic mb-12 text-stone-800">🎓 Professional Footprint</h2>
         <div class="grid md:grid-cols-2 gap-8">
             <div class="space-y-6">
                 <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Campus Ambassador | LawGlobal Hub | 2025</h4>
-                    <p class="text-xs text-stone-500 italic italic">Facilitating international legal discourse and cross-border networking.</p>
+                    <h4 class="font-bold text-sm uppercase mb-1">Legal Intern | Wole Olanipekun & Co [cite: 9, 10]</h4>
+                    <p class="text-xs text-stone-500 italic">Analyzed judicial reasoning in high-profile proceedings and managed preparation of case records. [cite: 12, 14]</p>
                 </div>
                 <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Campus Ambassador | My Lexova AI | 2025</h4>
-                    <p class="text-xs text-stone-500 italic italic">Championing AI-enabled legal research literacy among students.</p>
+                    <h4 class="font-bold text-sm uppercase mb-1">Head of Programs | LAWSAN SouthWest</h4>
+                    <p class="text-xs text-stone-500 italic">Newly appointed Lead for the Directorate of Student's Rights across the Southwest region.</p>
                 </div>
                 <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Campus Ambassador | Cowrywise | 2025</h4>
-                    <p class="text-xs text-stone-500 italic italic">Promoting digital financial literacy and savings culture on campus.</p>
+                    <h4 class="font-bold text-sm uppercase mb-1">Head of Research | ADR & Aequitas Chamber</h4>
+                    <p class="text-xs text-stone-500 italic">Drafted mediation scenarios for ADR Day and originating processes for Chamber Week competitions.</p>
                 </div>
             </div>
             <div class="space-y-6">
                 <div class="p-6 border border-[#9A7B4F] bg-stone-50">
-                    <h4 class="font-bold text-sm uppercase mb-1">Event & Training Coordinator | Data Protection Club</h4>
-                    <p class="text-xs text-stone-500">Architected workshops on data security that reached 200+ student professionals.</p>
+                    <h4 class="font-bold text-sm uppercase mb-1">Event & Training Coordinator | Data Protection Club [cite: 34]</h4>
+                    <p class="text-xs text-stone-500 italic">Coordinated the UN "End Digital Violence" conference and hosted the NDPC for a 3-day national rally. [cite: 35, 36]</p>
                 </div>
                 <div class="mt-8 pt-8 border-t border-subtle">
-                    <h3 class="serif text-xl mb-4 italic text-black text-black">Certifications & Awards</h3>
-                    <ul class="text-[11px] space-y-3 uppercase tracking-widest text-stone-600 font-semibold font-semibold">
-                        <li>• Legal Research & Writing – Legal Diamonds (2025)</li>
-                        <li>• Intellectual Property – WIPO (2024)</li>
-                        <li>• Digital Business Training – WIDB/Microsoft (2024)</li>
-                        <li>• Personal Branding – Legal Diamond (2024)</li>
-                        <li>• Business Admin & Management – LLBI (2023)</li>
-                    </ul>
+                    <h3 class="serif text-xl mb-4 italic text-black">Academic Mentorship</h3>
+                    <p class="text-xs text-stone-600 mb-4">SRC Mentorship Committee: Assisting 100L and 200L students with academic transitioning and peer tutorials.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-8 py-24 bg-stone-50 border-y border-subtle">
+    <section id="publications" class="max-w-6xl mx-auto px-8 py-24 bg-stone-50 border-y border-subtle">
         <div class="grid md:grid-cols-2 gap-16">
             <div>
-                <h2 class="serif text-2xl italic mb-8 text-stone-800">Blog Posts (Magazine Formats)</h2>
+                <h2 class="serif text-2xl italic mb-8 text-stone-800">The Ajebutter Papers</h2>
                 <div class="space-y-4">
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle group group">
-                        <span class="text-xs font-semibold uppercase tracking-tight tracking-tight">1. Why Building a Personal Brand Is Today’s CV</span>
-                        <a href="#" class="text-[9px] font-bold bg-black text-white px-4 py-2 uppercase hover:bg-stone-800 hover:bg-stone-800">Access</a>
-                    </div>
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle group group">
-                        <span class="text-xs font-semibold uppercase tracking-tight tracking-tight">2. How to Write Like a Lawyer, Think Like a Brand</span>
-                        <a href="#" class="text-[9px] font-bold border border-black px-4 py-2 uppercase hover:bg-black hover:text-white transition hover:bg-black hover:text-white transition">Access</a>
-                    </div>
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle group group">
-                        <span class="text-xs font-semibold uppercase tracking-tight tracking-tight">3. Balancing Poise and Power: The Unspoken Curriculum</span>
-                        <a href="#" class="text-[9px] font-bold border border-black px-4 py-2 uppercase hover:bg-black hover:text-white transition hover:bg-black hover:text-white transition">Access</a>
-                    </div>
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle group group">
-                        <span class="text-xs font-semibold uppercase tracking-tight tracking-tight">4. Digital Diplomacy: Influence with Integrity</span>
-                        <a href="#" class="text-[9px] font-bold border border-black px-4 py-2 uppercase hover:bg-black hover:text-white transition hover:bg-black hover:text-white transition">Access</a>
+                    <div class="flex justify-between items-center bg-white p-5 border border-subtle">
+                        <span class="text-xs font-semibold uppercase">Edition I — Why Grace Is Still a Power Strategy</span>
+                        <span class="text-[9px] font-bold bg-black text-white px-4 py-2 uppercase">Read</span>
                     </div>
                 </div>
             </div>
             <div>
-                <h2 class="serif text-2xl italic mb-8 text-stone-800">Ajebutter Papers</h2>
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle bg-white p-5 border border-subtle">
-                        <span class="text-xs font-semibold uppercase tracking-tight tracking-tight tracking-tight">Edition I — Why Grace Is Still a Power Strategy</span>
-                        <a href="#" class="text-[9px] font-bold bg-black text-white px-4 py-2 uppercase uppercase">Read</a>
-                    </div>
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle bg-white p-5 border border-subtle">
-                        <span class="text-xs font-semibold uppercase tracking-tight tracking-tight tracking-tight">Edition II — The Student’s Guide to Digital Relevance</span>
-                        <a href="#" class="text-[9px] font-bold border border-black px-4 py-2 uppercase uppercase">Read</a>
-                    </div>
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle bg-white p-5 border border-subtle">
-                        <span class="text-xs font-semibold uppercase tracking-tight tracking-tight tracking-tight tracking-tight">Edition III — Notes on Soft Leadership</span>
-                        <a href="#" class="text-[9px] font-bold border border-black px-4 py-2 uppercase uppercase">Read</a>
-                    </div>
+                <h2 class="serif text-2xl italic mb-8 text-stone-800">Academic Committee | IP Club</h2>
+                <div class="p-5 bg-white border border-subtle">
+                    <p class="text-xs font-semibold uppercase mb-2">IP and Sports: Ready, Set and Innovate (2026)</p>
+                    <p class="text-[10px] text-stone-500 italic leading-relaxed">Responsible for drafting AIPC Podcast topics and national essay prompts as second-in-command of research.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="max-w-4xl mx-auto px-8 py-24">
-        <h2 class="serif text-3xl italic mb-6 text-center text-center">🤝 Engagement & Consultations</h2>
-        <p class="text-center text-stone-500 mb-12 text-sm max-w-xl mx-auto max-w-xl mx-auto">Available for high-impact collaborations that require intellectual rigor and aesthetic precision.</p>
-        
-        <div class="grid md:grid-cols-2 gap-8 text-sm">
-            <div class="p-6 border border-stone-100 shadow-sm">
-                <p class="font-bold uppercase text-[10px] accent-gold mb-2 tracking-widest uppercase text-[10px] accent-gold mb-2 tracking-widest">Legal & Policy</p>
-                <p class="text-stone-600">Policy research, legal writing, and academic collaborations.</p>
-            </div>
-            <div class="p-6 border border-stone-100 shadow-sm">
-                <p class="font-bold uppercase text-[10px] accent-gold mb-2 tracking-widest uppercase text-[10px] accent-gold mb-2 tracking-widest">Brand & Identity</p>
-                <p class="text-stone-600">Refining identity architecture for high-net-worth platforms.</p>
-            </div>
-            <div class="p-6 border border-stone-100 shadow-sm">
-                <p class="font-bold uppercase text-[10px] accent-gold mb-2 tracking-widest uppercase text-[10px] accent-gold mb-2 tracking-widest">Public Speaking</p>
-                <p class="text-stone-600">Panels on Tech, Law, and Female Leadership.</p>
-            </div>
-            <div class="p-6 border border-stone-100 shadow-sm">
-                <p class="font-bold uppercase text-[10px] accent-gold mb-2 tracking-widest uppercase text-[10px] accent-gold mb-2 tracking-widest">Mentorship</p>
-                <p class="text-stone-600">Developing the next generation of "Intellectual Influencers."</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="max-w-5xl mx-auto px-8 py-32 text-center">
-        <div class="bg-onyx text-white p-16 rounded-sm relative overflow-hidden">
-            <p class="text-[10px] uppercase tracking-[0.5em] text-stone-500 mb-8 relative z-10 uppercase tracking-[0.5em] text-stone-500 mb-8 relative z-10">🌍 Mission & Philosophy</p>
-            <h3 class="serif text-3xl md:text-4xl italic leading-relaxed mb-8 relative z-10 max-w-3xl mx-auto max-w-3xl mx-auto">
-                "To become a global voice in law, leadership, and legacy, inspiring my generation to build with beauty, live with vision, and move with intention."
-            </h3>
-            <p class="text-stone-400 font-light max-w-2xl mx-auto text-sm tracking-wide relative z-10 text-sm tracking-wide relative z-10">
-                I stand for clarity, class, and calling. Rooted in grace, Refined by growth, and Driven by legacy.
-            </p>
         </div>
     </section>
 
@@ -294,11 +184,10 @@
             <div class="text-[10px] uppercase tracking-[0.5em] text-stone-400 mb-6 font-bold">🎀 The Standard of Excellence</div>
             <h2 class="serif text-2xl italic text-stone-800 mb-8">Refined by Growth. Driven by Legacy. Powered by Clarity.</h2>
             <div class="flex justify-center gap-8 mb-12 text-[10px] uppercase tracking-widest font-semibold">
-                <a href="https://bit.ly/4kQR907" target="_blank" class="hover:accent-gold transition">LinkedIn</a>
-                <a href="mailto:simiajayi08@gmail.com" class="hover:accent-gold transition">Correspondence</a>
-                <a href="https://linktr.ee/simiajayi" target="_blank" class="hover:accent-gold transition">Linktree</a>
+                <a href="https://bit.ly/4kQR907" target="_blank" class="hover:accent-gold transition">LinkedIn [cite: 3]</a>
+                <a href="mailto:simiajayi08@gmail.com" class="hover:accent-gold transition">Correspondence [cite: 3]</a>
             </div>
-            <p class="text-[10px] text-stone-400 tracking-wide uppercase">© 2026 Similoluwa Esther Ajayi. AjebutterExtraordinaire™</p>
+            <p class="text-[10px] text-stone-400 tracking-wide uppercase">© 2026 Similoluwa Esther Ajayi. [cite: 1]</p>
         </div>
     </footer>
 
