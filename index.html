@@ -24,6 +24,7 @@
             --line: #DEDAD2;
             --gold: #98784A;
             --deep: #111111;
+            --onyx: #151515;
         }
 
         html {
@@ -48,8 +49,7 @@
             color: #fff;
         }
 
-        .gold,
-        .accent-gold {
+        .gold {
             color: var(--gold);
         }
 
@@ -57,8 +57,7 @@
             font-family: 'Bodoni Moda', serif;
         }
 
-        .hairline,
-        .border-subtle {
+        .hairline {
             border-color: var(--line);
         }
 
@@ -160,16 +159,24 @@
             border-color: #30302E;
         }
 
-        .bg-onyx {
-            background: var(--deep);
-        }
-
         .mobile-menu {
             display: none;
         }
 
         .mobile-menu.open {
             display: block;
+        }
+
+        .border-subtle {
+            border-color: #DEDAD2;
+        }
+
+        .accent-gold {
+            color: var(--gold);
+        }
+
+        .bg-onyx {
+            background: var(--onyx);
         }
 
         @media (max-width: 1024px) {
@@ -197,6 +204,7 @@
 ========================================================= -->
 
 <header class="sticky top-0 z-50 bg-[#F8F7F3]/95 backdrop-blur-md border-b hairline">
+
     <nav class="max-w-7xl mx-auto px-6 md:px-10 py-5 flex items-center justify-between">
 
         <a href="#" class="serif text-xl italic tracking-tight">
@@ -204,7 +212,9 @@
         </a>
 
         <div class="desktop-nav flex items-center gap-8 text-[10px] uppercase tracking-[.2em] text-stone-500">
+
             <a href="#profile" class="nav-link">Profile</a>
+            <a href="#performance" class="nav-link">Performance</a>
             <a href="#experience" class="nav-link">Experience</a>
             <a href="#leadership" class="nav-link">Leadership</a>
             <a href="#credentials" class="nav-link">Credentials</a>
@@ -228,6 +238,7 @@
                class="hover:text-black transition">
                 LinkedIn
             </a>
+
         </div>
 
         <button
@@ -235,30 +246,48 @@
             class="mobile-button text-xs uppercase tracking-[.2em] text-stone-500">
             Menu
         </button>
+
     </nav>
 
     <div id="mobileMenu" class="mobile-menu border-t hairline bg-[#F8F7F3]">
+
         <div class="px-6 py-6 flex flex-col gap-5 text-[11px] uppercase tracking-[.2em] text-stone-500">
+
             <a href="#profile" onclick="toggleMenu()">Profile</a>
+            <a href="#performance" onclick="toggleMenu()">Performance</a>
             <a href="#experience" onclick="toggleMenu()">Experience</a>
             <a href="#leadership" onclick="toggleMenu()">Leadership</a>
             <a href="#credentials" onclick="toggleMenu()">Credentials</a>
             <a href="#publications" onclick="toggleMenu()">Archive</a>
-            <a href="https://drive.google.com/file/d/1VrmWZRMjwt6fK8Qy_qBEHmhK7ubODIhD/view?usp=drive_link" target="_blank">Curriculum Vitae</a>
-            <a href="mailto:simiajayi08@gmail.com">Contact</a>
-            <a href="https://bit.ly/4kQR907" target="_blank">LinkedIn</a>
+
+            <a href="https://drive.google.com/file/d/1VrmWZRMjwt6fK8Qy_qBEHmhK7ubODIhD/view?usp=drive_link"
+               target="_blank">
+                Curriculum Vitae
+            </a>
+
+            <a href="mailto:simiajayi08@gmail.com">
+                Contact
+            </a>
+
+            <a href="https://bit.ly/4kQR907" target="_blank">
+                LinkedIn
+            </a>
+
         </div>
+
     </div>
+
 </header>
 
+
+<main>
 
 <!-- =========================================================
      HERO
 ========================================================= -->
 
-<main>
-
-<section id="profile" class="max-w-7xl mx-auto px-6 md:px-10 pt-20 md:pt-32 pb-24">
+<section id="profile"
+         class="max-w-7xl mx-auto px-6 md:px-10 pt-20 md:pt-32 pb-24">
 
     <div class="grid lg:grid-cols-[1fr_320px] gap-16 lg:gap-24 items-end">
 
@@ -274,32 +303,40 @@
             </h1>
 
             <div class="mt-10 max-w-3xl">
+
                 <p class="text-xl md:text-2xl serif italic text-stone-600 leading-relaxed">
                     Law, business, technology and institutional strategy —
                     approached as questions of architecture, not merely administration.
                 </p>
+
             </div>
 
             <div class="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-[10px] uppercase tracking-[.22em] text-stone-500">
+
                 <span>Corporate & Commercial Law</span>
                 <span>Technology & AI</span>
                 <span>Data Protection</span>
                 <span>Institutional Strategy</span>
+
             </div>
 
         </div>
 
+
         <div class="lg:pb-2">
 
             <div class="image-frame aspect-[4/5]">
+
                 <img
                     src="https://lh3.googleusercontent.com/d/1PFEa0Dnf7VmDada-SI-hPrkvOK3JQQ6u"
                     alt="Similoluwa Esther Ajayi"
                     class="w-full h-full object-cover grayscale"
                 >
+
             </div>
 
             <div class="mt-5 flex justify-between items-center">
+
                 <span class="eyebrow text-stone-400">
                     AFE BABALOLA UNIVERSITY
                 </span>
@@ -307,11 +344,13 @@
                 <span class="text-[10px] text-stone-400">
                     2026
                 </span>
+
             </div>
 
         </div>
 
     </div>
+
 
     <div class="mt-24 pt-8 border-t hairline grid md:grid-cols-[180px_1fr] gap-8">
 
@@ -320,6 +359,7 @@
         </p>
 
         <div class="max-w-4xl">
+
             <p class="text-lg md:text-xl text-stone-700 leading-relaxed">
                 Similoluwa Esther Ajayi is a law student and emerging legal professional
                 working across corporate and commercial law, technology, intellectual
@@ -334,6 +374,7 @@
                 initiatives and cross-functional projects spanning university,
                 professional and youth-led organisations.
             </p>
+
         </div>
 
     </div>
@@ -342,16 +383,17 @@
 
 
 <!-- =========================================================
-     SELECTED PERFORMANCE
+     PERFORMANCE
 ========================================================= -->
 
-<section class="dark-section">
+<section id="performance" class="dark-section">
 
     <div class="max-w-7xl mx-auto px-6 md:px-10 py-24">
 
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
 
             <div>
+
                 <p class="eyebrow text-stone-500 mb-5">
                     Selected Performance
                 </p>
@@ -359,6 +401,7 @@
                 <h2 class="serif text-4xl md:text-5xl font-normal">
                     Evidence of reach.
                 </h2>
+
             </div>
 
             <p class="muted text-sm max-w-md leading-relaxed">
@@ -368,41 +411,149 @@
 
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 border-t line-dark">
 
-            <div class="py-10 pr-6 border-b md:border-b-0 md:border-r line-dark">
-                <p class="eyebrow text-stone-500 mb-5">Impressions</p>
-                <p class="metric-number text-4xl md:text-5xl">770.19k</p>
+        <!-- PINTEREST -->
+
+        <div class="mb-20">
+
+            <div class="flex items-center gap-4 mb-8">
+
+                <span class="eyebrow text-stone-500">
+                    Pinterest · Digital Reach
+                </span>
+
+                <div class="h-px bg-[#30302E] flex-1"></div>
+
             </div>
 
-            <div class="py-10 px-6 border-b md:border-b-0 md:border-r line-dark">
-                <p class="eyebrow text-stone-500 mb-5">Engagements</p>
-                <p class="metric-number text-4xl md:text-5xl">60.79k</p>
+
+            <div class="grid grid-cols-2 lg:grid-cols-6 border-t line-dark">
+
+                <div class="py-10 pr-6 border-b lg:border-b-0 lg:border-r line-dark">
+
+                    <p class="eyebrow text-stone-500 mb-5">
+                        Impressions
+                    </p>
+
+                    <p class="metric-number text-4xl md:text-5xl">
+                        770.19k
+                    </p>
+
+                </div>
+
+
+                <div class="py-10 px-6 border-b lg:border-b-0 lg:border-r line-dark">
+
+                    <p class="eyebrow text-stone-500 mb-5">
+                        Engagements
+                    </p>
+
+                    <p class="metric-number text-4xl md:text-5xl">
+                        60.79k
+                    </p>
+
+                </div>
+
+
+                <div class="py-10 px-6 border-b lg:border-b-0 lg:border-r line-dark">
+
+                    <p class="eyebrow text-stone-500 mb-5">
+                        Outbound Clicks
+                    </p>
+
+                    <p class="metric-number text-4xl md:text-5xl">
+                        353
+                    </p>
+
+                </div>
+
+
+                <div class="py-10 px-6 border-b lg:border-b-0 lg:border-r line-dark">
+
+                    <p class="eyebrow text-stone-500 mb-5">
+                        Saves
+                    </p>
+
+                    <p class="metric-number text-4xl md:text-5xl">
+                        12.37k
+                    </p>
+
+                </div>
+
+
+                <div class="py-10 px-6 border-b lg:border-b-0 lg:border-r line-dark">
+
+                    <p class="eyebrow text-stone-500 mb-5">
+                        Total Audience
+                    </p>
+
+                    <p class="metric-number text-4xl md:text-5xl">
+                        532.1k
+                    </p>
+
+                </div>
+
+
+                <div class="py-10 pl-6">
+
+                    <p class="eyebrow text-stone-500 mb-5">
+                        Engaged Audience
+                    </p>
+
+                    <p class="metric-number text-4xl md:text-5xl">
+                        46.03k
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="py-10 px-6 border-b md:border-b-0 md:border-r line-dark">
-                <p class="eyebrow text-stone-500 mb-5">Outbound Clicks</p>
-                <p class="metric-number text-4xl md:text-5xl">353</p>
+        </div>
+
+
+        <!-- LINKEDIN -->
+
+        <div>
+
+            <div class="flex items-center gap-4 mb-8">
+
+                <span class="eyebrow text-stone-500">
+                    LinkedIn · Professional Audience
+                </span>
+
+                <div class="h-px bg-[#30302E] flex-1"></div>
+
             </div>
 
-            <div class="py-10 px-6 border-b md:border-b-0 md:border-r line-dark">
-                <p class="eyebrow text-stone-500 mb-5">Saves</p>
-                <p class="metric-number text-4xl md:text-5xl">12.37k</p>
-            </div>
 
-            <div class="py-10 px-6 border-b md:border-b-0 md:border-r line-dark">
-                <p class="eyebrow text-stone-500 mb-5">Total Audience</p>
-                <p class="metric-number text-4xl md:text-5xl">532.1k</p>
-            </div>
+            <div class="border-t line-dark">
 
-            <div class="py-10 px-6 border-b md:border-b-0 md:border-r line-dark">
-                <p class="eyebrow text-stone-500 mb-5">Engaged Audience</p>
-                <p class="metric-number text-4xl md:text-5xl">46.03k</p>
-            </div>
+                <div class="py-12 flex flex-col md:flex-row md:items-end justify-between gap-8">
 
-            <div class="py-10 pl-6">
-                <p class="eyebrow text-stone-500 mb-5">LinkedIn Followers</p>
-                <p class="metric-number text-4xl md:text-5xl">5,283</p>
+                    <div>
+
+                        <p class="eyebrow text-stone-500 mb-5">
+                            Professional Audience
+                        </p>
+
+                        <p class="metric-number text-6xl md:text-8xl">
+                            5,283
+                        </p>
+
+                    </div>
+
+                    <div class="max-w-sm">
+
+                        <p class="text-sm muted leading-relaxed">
+                            LinkedIn followers forming the professional-facing
+                            audience across law, business, technology, leadership,
+                            institutional development and related fields.
+                        </p>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
@@ -416,22 +567,24 @@
      EXPERIENCE & INSTITUTIONAL RECORD
 ========================================================= -->
 
-<section id="experience" class="max-w-7xl mx-auto px-6 md:px-10 py-28">
+<section id="experience"
+         class="max-w-6xl mx-auto px-8 py-24">
 
     <div class="flex flex-col md:flex-row justify-between items-start mb-16">
 
         <div>
-            <p class="eyebrow gold mb-5">
-                01 · Professional Record
+
+            <p class="eyebrow text-stone-400 font-bold mb-3">
+                Professional Record
             </p>
 
-            <h2 class="serif text-4xl md:text-5xl italic text-stone-800">
-                Experience &<br>
-                Institutional Record
+            <h2 class="serif text-4xl italic text-stone-800">
+                Experience & Institutional Record
             </h2>
+
         </div>
 
-        <p class="max-w-md text-sm text-stone-500 leading-relaxed mt-6 md:mt-2">
+        <p class="max-w-md text-xs text-stone-500 leading-relaxed mt-6 md:mt-2">
             A longitudinal record of professional engagements, institutional
             leadership, strategic initiatives, research, advocacy and
             cross-disciplinary work.
@@ -445,27 +598,35 @@
     <div class="mb-20">
 
         <div class="flex items-center gap-4 mb-8">
-            <span class="eyebrow text-stone-400">
+
+            <span class="eyebrow text-stone-400 font-bold">
                 Current Mandates
             </span>
+
             <div class="h-px bg-stone-200 flex-1"></div>
+
         </div>
 
-        <div class="space-y-0 border-t hairline">
 
-            <!-- LSS OPPORTUNITY OFFICE -->
+        <div class="space-y-0 border-t border-subtle">
 
-            <article class="py-10 border-b hairline grid md:grid-cols-[1fr_2fr] gap-8">
+
+            <!-- OPPORTUNITY OFFICE -->
+
+            <article class="py-10 border-b border-subtle grid md:grid-cols-[1fr_2fr] gap-8">
 
                 <div>
-                    <p class="eyebrow text-stone-400 mb-2">
+
+                    <p class="text-[10px] uppercase tracking-[0.25em] text-stone-400 mb-2">
                         May 2026 — Present
                     </p>
 
                     <p class="text-xs text-stone-400">
                         Afe Babalola University · Remote
                     </p>
+
                 </div>
+
 
                 <div>
 
@@ -481,7 +642,10 @@
                         Founded and lead the LSS Opportunity Office, an institutional
                         platform designed to centralise and expand access to academic,
                         professional, fellowship, internship, scholarship and
-                        career-development opportunities for law students.
+                        career-development opportunities for law students. The model
+                        is also being developed toward implementation within the
+                        Students' Representative Council structure across colleges
+                        of Afe Babalola University.
                     </p>
 
                     <ul class="space-y-3 text-sm text-stone-600 leading-relaxed">
@@ -489,30 +653,40 @@
                         <li class="flex gap-3">
                             <span class="accent-gold">•</span>
                             <span>
-                                Developed separate Undergraduate and Graduate Opportunity
-                                Desks to structure opportunity discovery, dissemination
-                                and career support across different stages of the
-                                student-to-professional pipeline.
+                                Developed separate Undergraduate and Graduate
+                                Opportunity Desks to structure opportunity discovery,
+                                dissemination and career support across different
+                                stages of the student-to-professional pipeline.
                             </span>
                         </li>
 
                         <li class="flex gap-3">
                             <span class="accent-gold">•</span>
                             <span>
-                                Designed operational frameworks for opportunity tracking,
-                                communication, student engagement and continuity to reduce
-                                information gaps and improve equitable access to high-value
-                                opportunities.
+                                Designed operational frameworks for opportunity
+                                tracking, communication, student engagement and
+                                continuity to reduce information gaps and improve
+                                equitable access to high-value opportunities.
                             </span>
                         </li>
 
                         <li class="flex gap-3">
                             <span class="accent-gold">•</span>
                             <span>
-                                Coordinate with student leadership structures and team
-                                members to identify, curate and communicate opportunities
-                                aligned with students' academic and professional
-                                development needs.
+                                Coordinate with student leadership structures and
+                                team members to identify, curate and communicate
+                                opportunities aligned with students' academic and
+                                professional development needs.
+                            </span>
+                        </li>
+
+                        <li class="flex gap-3">
+                            <span class="accent-gold">•</span>
+                            <span>
+                                Developing the model for broader adoption through
+                                the SRC framework across ABUAD colleges, positioning
+                                opportunity access as institutional infrastructure
+                                rather than an informal, person-dependent service.
                             </span>
                         </li>
 
@@ -525,17 +699,20 @@
 
             <!-- LAWSAN -->
 
-            <article class="py-10 border-b hairline grid md:grid-cols-[1fr_2fr] gap-8">
+            <article class="py-10 border-b border-subtle grid md:grid-cols-[1fr_2fr] gap-8">
 
                 <div>
-                    <p class="eyebrow text-stone-400 mb-2">
+
+                    <p class="text-[10px] uppercase tracking-[0.25em] text-stone-400 mb-2">
                         May 2026 — Present
                     </p>
 
                     <p class="text-xs text-stone-400">
-                        Africa · Remote
+                        South-West Nigeria · Remote
                     </p>
+
                 </div>
+
 
                 <div>
 
@@ -613,17 +790,20 @@
 
             <!-- COMMONWEALTH -->
 
-            <article class="py-10 border-b hairline grid md:grid-cols-[1fr_2fr] gap-8">
+            <article class="py-10 border-b border-subtle grid md:grid-cols-[1fr_2fr] gap-8">
 
                 <div>
-                    <p class="eyebrow text-stone-400 mb-2">
+
+                    <p class="text-[10px] uppercase tracking-[0.25em] text-stone-400 mb-2">
                         July 2026 — Present
                     </p>
 
                     <p class="text-xs text-stone-400">
                         Ado-Ekiti, Nigeria · Hybrid
                     </p>
+
                 </div>
+
 
                 <div>
 
@@ -668,17 +848,20 @@
 
             <!-- SIMMONSCOOPER -->
 
-            <article class="py-10 border-b hairline grid md:grid-cols-[1fr_2fr] gap-8">
+            <article class="py-10 border-b border-subtle grid md:grid-cols-[1fr_2fr] gap-8">
 
                 <div>
-                    <p class="eyebrow text-stone-400 mb-2">
+
+                    <p class="text-[10px] uppercase tracking-[0.25em] text-stone-400 mb-2">
                         June 2026 — Present
                     </p>
 
                     <p class="text-xs text-stone-400">
                         Lagos, Nigeria · On-site
                     </p>
+
                 </div>
+
 
                 <div>
 
@@ -734,17 +917,20 @@
 
             <!-- BRIDGE -->
 
-            <article class="py-10 border-b hairline grid md:grid-cols-[1fr_2fr] gap-8">
+            <article class="py-10 border-b border-subtle grid md:grid-cols-[1fr_2fr] gap-8">
 
                 <div>
-                    <p class="eyebrow text-stone-400 mb-2">
+
+                    <p class="text-[10px] uppercase tracking-[0.25em] text-stone-400 mb-2">
                         August 2026 — Present
                     </p>
 
                     <p class="text-xs text-stone-400">
                         Lagos, Nigeria · Hybrid
                     </p>
+
                 </div>
+
 
                 <div>
 
@@ -767,28 +953,29 @@
                         <li class="flex gap-3">
                             <span class="accent-gold">•</span>
                             <span>
-                                Work in multidisciplinary teams to identify and validate
-                                real-world problems, develop solutions, conduct data-driven
-                                validation and market sizing, build business models and
-                                refine value propositions.
+                                Work in multidisciplinary teams to identify and
+                                validate real-world problems, develop solutions,
+                                conduct data-driven validation and market sizing,
+                                build business models and refine value propositions.
                             </span>
                         </li>
 
                         <li class="flex gap-3">
                             <span class="accent-gold">•</span>
                             <span>
-                                Develop practical experience in negotiation, pitching,
-                                stakeholder communication, group decision-making and
-                                consensus-building through applied projects and simulations.
+                                Develop practical experience in negotiation,
+                                pitching, stakeholder communication, group
+                                decision-making and consensus-building through
+                                applied projects and simulations.
                             </span>
                         </li>
 
                         <li class="flex gap-3">
                             <span class="accent-gold">•</span>
                             <span>
-                                Completed the intensive residential bootcamp component
-                                and continue as a Bridge Fellow for the remainder of
-                                the year-long programme.
+                                Completed the intensive residential bootcamp
+                                component and continue as a Bridge Fellow for
+                                the remainder of the year-long programme.
                             </span>
                         </li>
 
@@ -801,17 +988,20 @@
 
             <!-- ENERGY LAW -->
 
-            <article class="py-10 border-b hairline grid md:grid-cols-[1fr_2fr] gap-8">
+            <article class="py-10 border-b border-subtle grid md:grid-cols-[1fr_2fr] gap-8">
 
                 <div>
-                    <p class="eyebrow text-stone-400 mb-2">
+
+                    <p class="text-[10px] uppercase tracking-[0.25em] text-stone-400 mb-2">
                         May 2026 — Present
                     </p>
 
                     <p class="text-xs text-stone-400">
                         Afe Babalola University
                     </p>
+
                 </div>
+
 
                 <div>
 
@@ -839,140 +1029,192 @@
     </div>
 
 
-    <!-- SELECTED EARLIER RECORD -->
+    <!-- EARLIER RECORD -->
 
     <div>
 
         <div class="flex items-center gap-4 mb-8">
-            <span class="eyebrow text-stone-400">
+
+            <span class="eyebrow text-stone-400 font-bold">
                 Selected Earlier Record
             </span>
+
             <div class="h-px bg-stone-200 flex-1"></div>
+
         </div>
+
 
         <div class="grid md:grid-cols-2 gap-6">
 
+
             <div class="p-7 border border-subtle bg-white hover:shadow-md transition">
+
                 <h4 class="font-bold text-sm uppercase mb-2">
                     Summer Legal Intern | Wole Olanipekun & Co.
                 </h4>
+
                 <p class="text-xs text-stone-500 leading-relaxed">
                     Legal research, corporate advisory exposure, litigation support,
                     drafting and structured legal analysis within a leading Nigerian
                     law firm.
                 </p>
+
             </div>
 
+
             <div class="p-7 border border-subtle bg-white hover:shadow-md transition">
+
                 <h4 class="font-bold text-sm uppercase mb-2">
                     Legal Intern | Record of Law
                 </h4>
+
                 <p class="text-xs text-stone-500 leading-relaxed">
                     Research-driven legal writing, case analysis and publication
                     development across contemporary legal issues.
                 </p>
+
             </div>
 
+
             <div class="p-7 border border-subtle bg-white hover:shadow-md transition">
+
                 <h4 class="font-bold text-sm uppercase mb-2">
                     Head of Research | Aequitas Student Chamber
                 </h4>
+
                 <p class="text-xs text-stone-500 leading-relaxed">
                     Drafted briefs, originating process applications and research
                     materials for Chamber Week and Moot Competitions.
                 </p>
+
             </div>
 
+
             <div class="p-7 border border-subtle bg-white hover:shadow-md transition">
+
                 <h4 class="font-bold text-sm uppercase mb-2">
                     Head of Research | ADR Committee
                 </h4>
+
                 <p class="text-xs text-stone-500 leading-relaxed">
                     Drafted mediation scenarios for ADR Day and arbitration
                     scenarios for Law Week programming.
                 </p>
+
             </div>
 
+
             <div class="p-7 border border-subtle bg-white hover:shadow-md transition">
+
                 <h4 class="font-bold text-sm uppercase mb-2">
                     Campus Ambassador | My Lexova AI
                 </h4>
+
                 <p class="text-xs text-stone-500 leading-relaxed">
                     Promoted AI-enabled legal research literacy among students and
                     received Campus Ambassador of the Month recognition for
                     exceptional market adoption metrics.
                 </p>
+
             </div>
 
+
             <div class="p-7 border border-subtle bg-white hover:shadow-md transition">
+
                 <h4 class="font-bold text-sm uppercase mb-2">
                     Campus Ambassador | Cowrywise
                 </h4>
+
                 <p class="text-xs text-stone-500 leading-relaxed">
                     Promoted digital financial literacy and responsible savings
                     culture within the university community.
                 </p>
+
             </div>
 
+
             <div class="p-7 border border-subtle bg-white hover:shadow-md transition">
+
                 <h4 class="font-bold text-sm uppercase mb-2">
                     Campus Ambassador | LawGlobal Hub
                 </h4>
+
                 <p class="text-xs text-stone-500 leading-relaxed">
                     Facilitated international legal discourse, professional
                     development and cross-border networking opportunities.
                 </p>
+
             </div>
 
+
             <div class="p-7 border border-subtle bg-white hover:shadow-md transition">
+
                 <h4 class="font-bold text-sm uppercase mb-2">
                     Brand Ambassador | Naos Simulations
                 </h4>
+
                 <p class="text-xs text-stone-500 leading-relaxed">
                     Supported student engagement with newly developed legal
                     simulations across different areas of law.
                 </p>
+
             </div>
 
+
             <div class="p-7 border border-subtle bg-white hover:shadow-md transition">
+
                 <h4 class="font-bold text-sm uppercase mb-2">
                     Event & Training Coordinator | DPPC
                 </h4>
+
                 <p class="text-xs text-stone-500 leading-relaxed">
                     Planned a two-day UN Activism rally and coordinated practical
                     general meetings on data protection and privacy.
                 </p>
+
             </div>
 
+
             <div class="p-7 border border-subtle bg-white hover:shadow-md transition">
+
                 <h4 class="font-bold text-sm uppercase mb-2">
                     Academic Mentor | SRC Mentorship Committee
                 </h4>
+
                 <p class="text-xs text-stone-500 leading-relaxed">
                     Supported 100L and 200L Direct Entry students through academic
                     tutorials, resource sharing and transition support.
                 </p>
+
             </div>
 
+
             <div class="p-7 border border-subtle bg-white hover:shadow-md transition">
+
                 <h4 class="font-bold text-sm uppercase mb-2">
                     Academic Committee | ABUAD IP Club
                 </h4>
+
                 <p class="text-xs text-stone-500 leading-relaxed">
                     Lead researcher and drafter for AIPC podcast and essay topics,
                     including work around the 2026 intellectual property and
                     sports theme.
                 </p>
+
             </div>
 
+
             <div class="p-7 border border-subtle bg-white hover:shadow-md transition">
+
                 <h4 class="font-bold text-sm uppercase mb-2">
                     Student Researcher & Writer | Wale University
                 </h4>
+
                 <p class="text-xs text-stone-500 leading-relaxed">
                     Researching and developing legal publications with emphasis
                     on structured legal writing and contemporary legal issues.
                 </p>
+
             </div>
 
         </div>
@@ -984,7 +1226,7 @@
 
     <div class="mt-20 bg-onyx text-white p-10 md:p-14">
 
-        <p class="eyebrow text-stone-500 mb-5">
+        <p class="eyebrow text-stone-500 font-bold mb-5">
             Strategic Advisory
         </p>
 
@@ -1007,6 +1249,7 @@
                 </p>
 
             </div>
+
 
             <div>
 
@@ -1054,77 +1297,120 @@
 
         </div>
 
+
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
 
+
             <div class="archive-card p-7">
-                <p class="eyebrow gold mb-5">Opportunity Systems</p>
+
+                <p class="eyebrow gold mb-5">
+                    Opportunity Systems
+                </p>
+
                 <h3 class="serif text-2xl mb-4">
                     LSS Opportunity Office
                 </h3>
+
                 <p class="text-sm text-stone-600">
-                    Initiator of the ABUAD LSS Opportunity Office, a centralised
-                    opportunity infrastructure connecting students with scholarships,
-                    internships, externships, research opportunities and other
-                    professional development pathways.
+                    Initiator of the ABUAD LSS Opportunity Office, with the model
+                    being developed toward broader SRC implementation across
+                    ABUAD colleges to create a more institutionalised opportunity
+                    infrastructure.
                 </p>
+
             </div>
 
+
             <div class="archive-card p-7">
-                <p class="eyebrow gold mb-5">Regional Administration</p>
+
+                <p class="eyebrow gold mb-5">
+                    Regional Administration
+                </p>
+
                 <h3 class="serif text-2xl mb-4">
                     LAWSAN South-West
                 </h3>
+
                 <p class="text-sm text-stone-600">
                     Leading programme coordination across the South-West structure,
                     including state-level reporting, committee architecture and
                     institutional transition systems.
                 </p>
+
             </div>
 
+
             <div class="archive-card p-7">
-                <p class="eyebrow gold mb-5">Academic Development</p>
+
+                <p class="eyebrow gold mb-5">
+                    Academic Development
+                </p>
+
                 <h3 class="serif text-2xl mb-4">
                     SRC Mentorship
                 </h3>
+
                 <p class="text-sm text-stone-600">
                     Supporting 100L and 200L direct-entry students through tutorials,
                     academic transition support and resource sharing.
                 </p>
+
             </div>
 
+
             <div class="archive-card p-7">
-                <p class="eyebrow gold mb-5">Research & ADR</p>
+
+                <p class="eyebrow gold mb-5">
+                    Research & ADR
+                </p>
+
                 <h3 class="serif text-2xl mb-4">
                     Aequitas Chamber
                 </h3>
+
                 <p class="text-sm text-stone-600">
                     Research and drafting responsibilities covering briefs,
                     originating process applications, moot materials and
                     advocacy exercises.
                 </p>
+
             </div>
 
+
             <div class="archive-card p-7">
-                <p class="eyebrow gold mb-5">Data & Privacy</p>
+
+                <p class="eyebrow gold mb-5">
+                    Data & Privacy
+                </p>
+
                 <h3 class="serif text-2xl mb-4">
                     DPPC
                 </h3>
+
                 <p class="text-sm text-stone-600">
                     Event and training coordination, including practical sessions
                     on data protection and privacy and a two-day UN Activism rally.
                 </p>
+
             </div>
 
+
             <div class="archive-card p-7">
-                <p class="eyebrow gold mb-5">Intellectual Property</p>
+
+                <p class="eyebrow gold mb-5">
+                    Intellectual Property
+                </p>
+
                 <h3 class="serif text-2xl mb-4">
                     ABUAD IP Club
                 </h3>
+
                 <p class="text-sm text-stone-600">
                     Research and drafting contributions to podcast and essay
                     initiatives around contemporary intellectual-property themes,
                     including IP and Sports.
                 </p>
+
             </div>
 
         </div>
@@ -1154,73 +1440,104 @@
 
         </div>
 
+
         <div class="grid md:grid-cols-2 gap-x-16 gap-y-14">
 
+
             <div>
+
                 <p class="eyebrow text-stone-400 mb-4">01</p>
+
                 <h3 class="serif text-2xl mb-3">
                     Corporate & Commercial Law
                 </h3>
+
                 <p class="text-sm text-stone-600">
                     Business law review, corporate governance, regulatory compliance,
                     commercial transactions and strategic legal analysis.
                 </p>
+
             </div>
 
+
             <div>
+
                 <p class="eyebrow text-stone-400 mb-4">02</p>
+
                 <h3 class="serif text-2xl mb-3">
                     Technology, AI & Data
                 </h3>
+
                 <p class="text-sm text-stone-600">
                     Legal technology, AI-augmented research, digital identity,
                     privacy and emerging data-protection frameworks.
                 </p>
+
             </div>
 
+
             <div>
+
                 <p class="eyebrow text-stone-400 mb-4">03</p>
+
                 <h3 class="serif text-2xl mb-3">
                     Intellectual Property
                 </h3>
+
                 <p class="text-sm text-stone-600">
                     Copyright, intellectual-property research, legal education and
                     contemporary questions at the intersection of IP, technology
                     and business.
                 </p>
+
             </div>
 
+
             <div>
+
                 <p class="eyebrow text-stone-400 mb-4">04</p>
+
                 <h3 class="serif text-2xl mb-3">
                     Institutional Strategy
                 </h3>
+
                 <p class="text-sm text-stone-600">
                     Programme architecture, committee systems, stakeholder
                     coordination, continuity planning and institutional development.
                 </p>
+
             </div>
 
+
             <div>
+
                 <p class="eyebrow text-stone-400 mb-4">05</p>
+
                 <h3 class="serif text-2xl mb-3">
                     Energy & Electricity
                 </h3>
+
                 <p class="text-sm text-stone-600">
                     Engagement with energy regulation, electricity law, policy
                     discourse and the institutional questions shaping the power sector.
                 </p>
+
             </div>
 
+
             <div>
+
                 <p class="eyebrow text-stone-400 mb-4">06</p>
+
                 <h3 class="serif text-2xl mb-3">
                     Advocacy & Litigation
                 </h3>
+
                 <p class="text-sm text-stone-600">
                     Moot competitions, mediation and arbitration scenarios,
                     legal drafting and advocacy-oriented research.
                 </p>
+
             </div>
 
         </div>
@@ -1252,83 +1569,116 @@
 
             </div>
 
+
             <div class="grid md:grid-cols-2 gap-x-12">
 
+
                 <div class="border-t line-dark py-7">
+
                     <h3 class="text-sm font-medium">
                         Brand Ambassador · Naos Simulations
                     </h3>
+
                     <p class="muted text-sm mt-2">
                         Facilitating student engagement with newly developed
                         legal simulations across different areas of law.
                     </p>
+
                 </div>
 
+
                 <div class="border-t line-dark py-7">
+
                     <h3 class="text-sm font-medium">
                         Campus Ambassador · Cowrywise
                     </h3>
+
                     <p class="muted text-sm mt-2">
                         Promoting digital financial literacy and savings culture.
                     </p>
+
                 </div>
 
+
                 <div class="border-t line-dark py-7">
+
                     <h3 class="text-sm font-medium">
                         Campus Ambassador · My Lexova AI
                     </h3>
+
                     <p class="muted text-sm mt-2">
                         Championing AI-enabled legal research literacy; recognised
                         as Campus Ambassador of the Month.
                     </p>
+
                 </div>
 
+
                 <div class="border-t line-dark py-7">
+
                     <h3 class="text-sm font-medium">
                         Campus Ambassador · LawGlobal Hub
                     </h3>
+
                     <p class="muted text-sm mt-2">
                         Facilitating international legal discourse and
                         cross-border networking.
                     </p>
+
                 </div>
 
+
                 <div class="border-t line-dark py-7">
+
                     <h3 class="text-sm font-medium">
                         American Bar Association
                     </h3>
+
                     <p class="muted text-sm mt-2">
                         Engagement across Business Law, Intellectual Property,
                         Litigation, Environment & Energy, and International Law.
                     </p>
+
                 </div>
 
+
                 <div class="border-t line-dark py-7">
+
                     <h3 class="text-sm font-medium">
                         Energy Institute, UK
                     </h3>
+
                     <p class="muted text-sm mt-2">
                         Student membership within the global energy professional ecosystem.
                     </p>
+
                 </div>
 
+
                 <div class="border-t line-dark py-7">
+
                     <h3 class="text-sm font-medium">
                         Lex Lata
                     </h3>
+
                     <p class="muted text-sm mt-2">
                         International law internship and research exposure.
                     </p>
+
                 </div>
 
+
                 <div class="border-t line-dark py-7">
+
                     <h3 class="text-sm font-medium">
                         International Law Association · Nigeria
                     </h3>
+
                     <p class="muted text-sm mt-2">
                         Research and professional engagement within the
                         international-law community.
                     </p>
+
                 </div>
 
             </div>
@@ -1344,9 +1694,11 @@
      CREDENTIALS
 ========================================================= -->
 
-<section id="credentials" class="max-w-7xl mx-auto px-6 md:px-10 py-28">
+<section id="credentials"
+         class="max-w-7xl mx-auto px-6 md:px-10 py-28">
 
     <div class="grid lg:grid-cols-2 gap-20">
+
 
         <div>
 
@@ -1358,39 +1710,65 @@
                 Professional<br>Formation
             </h2>
 
+
             <div class="space-y-7">
 
+
                 <div class="border-t hairline pt-6">
+
                     <h3 class="font-medium">
                         WIPO — Copyright Law Specialization
                     </h3>
-                    <p class="text-sm text-stone-500 mt-1">2024</p>
+
+                    <p class="text-sm text-stone-500 mt-1">
+                        2024
+                    </p>
+
                 </div>
 
+
                 <div class="border-t hairline pt-6">
+
                     <h3 class="font-medium">
                         WIPO — General Course on Intellectual Property
                     </h3>
-                    <p class="text-sm text-stone-500 mt-1">2024</p>
+
+                    <p class="text-sm text-stone-500 mt-1">
+                        2024
+                    </p>
+
                 </div>
 
+
                 <div class="border-t hairline pt-6">
+
                     <h3 class="font-medium">
                         Legal Diamonds Academy — Advanced Legal Research & Writing
                     </h3>
-                    <p class="text-sm text-stone-500 mt-1">2025</p>
+
+                    <p class="text-sm text-stone-500 mt-1">
+                        2025
+                    </p>
+
                 </div>
 
+
                 <div class="border-t hairline pt-6">
+
                     <h3 class="font-medium">
                         WIDB / Microsoft — Digital Business & Enterprise Training
                     </h3>
-                    <p class="text-sm text-stone-500 mt-1">2024</p>
+
+                    <p class="text-sm text-stone-500 mt-1">
+                        2024
+                    </p>
+
                 </div>
 
             </div>
 
         </div>
+
 
         <div>
 
@@ -1400,68 +1778,96 @@
 
             <div class="border-t hairline">
 
+
                 <div class="py-6 border-b hairline">
+
                     <p class="font-medium">
                         American Bar Association
                     </p>
+
                     <p class="text-sm text-stone-500 mt-1">
                         Business Law · Intellectual Property · Litigation ·
                         Environment & Energy · International Law
                     </p>
+
                 </div>
 
+
                 <div class="py-6 border-b hairline">
+
                     <p class="font-medium">
                         Energy Institute, UK
                     </p>
+
                     <p class="text-sm text-stone-500 mt-1">
                         Student Member
                     </p>
+
                 </div>
 
+
                 <div class="py-6 border-b hairline">
+
                     <p class="font-medium">
                         Data Protection & Privacy Club
                     </p>
+
                     <p class="text-sm text-stone-500 mt-1">
                         Event & Training Coordinator
                     </p>
+
                 </div>
 
+
                 <div class="py-6 border-b hairline">
+
                     <p class="font-medium">
                         Energy & Electricity Law Club
                     </p>
+
                     <p class="text-sm text-stone-500 mt-1">
                         Head of Programs
                     </p>
+
                 </div>
 
+
                 <div class="py-6 border-b hairline">
+
                     <p class="font-medium">
                         Aequitas Student Chambers / ADR Committee
                     </p>
+
                     <p class="text-sm text-stone-500 mt-1">
                         Head of Research
                     </p>
+
                 </div>
 
+
                 <div class="py-6 border-b hairline">
+
                     <p class="font-medium">
                         ABUAD IP Club / Nigerian Intellectual Property Club
                     </p>
+
                     <p class="text-sm text-stone-500 mt-1">
                         Institutional Footprint
                     </p>
+
                 </div>
 
+
                 <div class="py-6">
+
                     <p class="font-medium">
                         Literary & Debate Society / Academic Committee
                     </p>
+
                     <p class="text-sm text-stone-500 mt-1">
                         LSS ABUAD
                     </p>
+
                 </div>
 
             </div>
@@ -1483,6 +1889,7 @@
 
         <div class="grid lg:grid-cols-[280px_1fr] gap-16">
 
+
             <div>
 
                 <p class="eyebrow gold mb-5">
@@ -1495,7 +1902,9 @@
 
             </div>
 
+
             <div class="space-y-0">
+
 
                 <div class="archive-card p-8">
 
@@ -1517,6 +1926,7 @@
 
                 </div>
 
+
                 <div class="archive-card p-8 mt-5">
 
                     <p class="eyebrow text-stone-400 mb-4">
@@ -1535,6 +1945,7 @@
 
                 </div>
 
+
                 <div class="archive-card p-8 mt-5">
 
                     <p class="eyebrow text-stone-400 mb-4">
@@ -1544,6 +1955,7 @@
                     <h3 class="serif text-2xl mb-6">
                         Questions under examination
                     </h3>
+
 
                     <div class="grid md:grid-cols-2 gap-5">
 
@@ -1580,7 +1992,8 @@
      PUBLICATIONS
 ========================================================= -->
 
-<section id="publications" class="max-w-7xl mx-auto px-6 md:px-10 py-28">
+<section id="publications"
+         class="max-w-7xl mx-auto px-6 md:px-10 py-28">
 
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14">
 
@@ -1603,7 +2016,9 @@
 
     </div>
 
+
     <div class="grid lg:grid-cols-2 gap-16">
+
 
         <div>
 
@@ -1613,40 +2028,60 @@
 
             <div class="border-t hairline">
 
-                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
+                <a href="#"
+                   class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
                     <span class="serif text-xl group-hover:italic transition">
                         Why Building a Personal Brand Is Today's CV
                     </span>
+
                     <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
                         Read
                     </span>
+
                 </a>
 
-                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
+                <a href="#"
+                   class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
                     <span class="serif text-xl group-hover:italic transition">
                         How to Write Like a Lawyer, Think Like a Brand
                     </span>
+
                     <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
                         Read
                     </span>
+
                 </a>
 
-                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
+                <a href="#"
+                   class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
                     <span class="serif text-xl group-hover:italic transition">
                         Balancing Poise and Power: The Unspoken Curriculum
                     </span>
+
                     <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
                         Read
                     </span>
+
                 </a>
 
-                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
+                <a href="#"
+                   class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
                     <span class="serif text-xl group-hover:italic transition">
                         Digital Diplomacy: Influence with Integrity
                     </span>
+
                     <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
                         Read
                     </span>
+
                 </a>
 
             </div>
@@ -1662,31 +2097,46 @@
 
             <div class="border-t hairline">
 
-                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
+                <a href="#"
+                   class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
                     <span class="serif text-xl group-hover:italic transition">
                         Edition I — Why Grace Is Still a Power Strategy
                     </span>
+
                     <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
                         Read
                     </span>
+
                 </a>
 
-                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
+                <a href="#"
+                   class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
                     <span class="serif text-xl group-hover:italic transition">
                         Edition II — The Student's Guide to Digital Relevance
                     </span>
+
                     <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
                         Read
                     </span>
+
                 </a>
 
-                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
+                <a href="#"
+                   class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+
                     <span class="serif text-xl group-hover:italic transition">
                         Edition III — Notes on Soft Leadership
                     </span>
+
                     <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
                         Read
                     </span>
+
                 </a>
 
             </div>
@@ -1708,6 +2158,7 @@
 
         <div class="flex flex-col md:flex-row justify-between gap-6">
 
+
             <div>
 
                 <p class="eyebrow gold mb-4">
@@ -1719,6 +2170,7 @@
                 </h2>
 
             </div>
+
 
             <p class="text-sm text-stone-500 max-w-sm md:text-right">
                 A visual record of professional presence, academic work,
@@ -1732,22 +2184,28 @@
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
 
+
         <div class="space-y-4">
 
             <div class="image-frame aspect-[3/4]">
+
                 <img
                     src="https://drive.google.com/thumbnail?id=1iZ49M_FrFVV5tVePkyIcUH4KwyadgHLg&sz=w1000"
                     alt="Leadership"
                     class="w-full h-full object-cover grayscale"
                 >
+
             </div>
 
+
             <div class="image-frame aspect-square">
+
                 <img
                     src="https://drive.google.com/thumbnail?id=1UXOt5QCxMAEbAT0VQP-b0M2l4SgFjuD3&sz=w1000"
                     alt="Strategic Sessions"
                     class="w-full h-full object-cover grayscale"
                 >
+
             </div>
 
         </div>
@@ -1755,20 +2213,26 @@
 
         <div class="pt-10 space-y-4">
 
+
             <div class="image-frame aspect-square">
+
                 <img
                     src="https://drive.google.com/thumbnail?id=1nuJ8xuejohzVU00FBkd5sJHUx-twLgt-&sz=w1000"
                     alt="Academic Excellence"
                     class="w-full h-full object-cover grayscale"
                 >
+
             </div>
 
+
             <div class="image-frame aspect-[3/4]">
+
                 <img
                     src="https://drive.google.com/thumbnail?id=18DLcC6q1LwDIasIvXOFfXAJPm3Z_nNIC&sz=w1000"
                     alt="Professional Presence"
                     class="w-full h-full object-cover grayscale"
                 >
+
             </div>
 
         </div>
@@ -1776,20 +2240,26 @@
 
         <div class="space-y-4">
 
+
             <div class="image-frame aspect-[3/4]">
+
                 <img
                     src="https://drive.google.com/thumbnail?id=1nuJ8xuejohzVU00FBkd5sJHUx-twLgt-&sz=w1000"
                     alt="Legal Research"
                     class="w-full h-full object-cover grayscale"
                 >
+
             </div>
 
+
             <div class="image-frame aspect-square">
+
                 <img
                     src="https://lh3.googleusercontent.com/d/153zbdd742wEkWK7t9tI6p6koaygkv1Jo"
                     alt="Networking"
                     class="w-full h-full object-cover grayscale"
                 >
+
             </div>
 
         </div>
@@ -1797,20 +2267,26 @@
 
         <div class="pt-10 space-y-4">
 
+
             <div class="image-frame aspect-square">
+
                 <img
                     src="https://drive.google.com/thumbnail?id=1fkKdKgxIu916nsxBGCjljhvH1QpUvtAw&sz=w1000"
                     alt="Advocacy"
                     class="w-full h-full object-cover grayscale"
                 >
+
             </div>
 
+
             <div class="image-frame aspect-[3/4]">
+
                 <img
                     src="https://drive.google.com/thumbnail?id=18DLcC6q1LwDIasIvXOFfXAJPm3Z_nNIC&sz=w1000"
                     alt="Executive Presence"
                     class="w-full h-full object-cover grayscale"
                 >
+
             </div>
 
         </div>
@@ -1840,28 +2316,26 @@
                 who first designed them.
             </h2>
 
+
             <div class="mt-10 flex flex-wrap gap-5">
 
-                <a
-                    href="https://bit.ly/4kQR907"
-                    target="_blank"
-                    class="inline-flex items-center border border-stone-700 px-6 py-3 text-[10px] uppercase tracking-[.2em] hover:bg-white hover:text-black transition"
-                >
+
+                <a href="https://bit.ly/4kQR907"
+                   target="_blank"
+                   class="inline-flex items-center border border-stone-700 px-6 py-3 text-[10px] uppercase tracking-[.2em] hover:bg-white hover:text-black transition">
                     LinkedIn
                 </a>
 
-                <a
-                    href="mailto:simiajayi08@gmail.com"
-                    class="inline-flex items-center border border-stone-700 px-6 py-3 text-[10px] uppercase tracking-[.2em] hover:bg-white hover:text-black transition"
-                >
+
+                <a href="mailto:simiajayi08@gmail.com"
+                   class="inline-flex items-center border border-stone-700 px-6 py-3 text-[10px] uppercase tracking-[.2em] hover:bg-white hover:text-black transition">
                     Contact
                 </a>
 
-                <a
-                    href="https://drive.google.com/file/d/1VrmWZRMjwt6fK8Qy_qBEHmhK7ubODIhD/view?usp=drive_link"
-                    target="_blank"
-                    class="inline-flex items-center border border-stone-700 px-6 py-3 text-[10px] uppercase tracking-[.2em] hover:bg-white hover:text-black transition"
-                >
+
+                <a href="https://drive.google.com/file/d/1VrmWZRMjwt6fK8Qy_qBEHmhK7ubODIhD/view?usp=drive_link"
+                   target="_blank"
+                   class="inline-flex items-center border border-stone-700 px-6 py-3 text-[10px] uppercase tracking-[.2em] hover:bg-white hover:text-black transition">
                     Curriculum Vitae
                 </a>
 
@@ -1898,10 +2372,15 @@
 
 
 <script>
+
     function toggleMenu() {
+
         const menu = document.getElementById('mobileMenu');
+
         menu.classList.toggle('open');
+
     }
+
 </script>
 
 </body>
