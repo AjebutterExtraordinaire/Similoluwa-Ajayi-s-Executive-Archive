@@ -3,416 +3,1314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S.E. AJAYI | Executive Archive</title>
-    
+
+    <title>Similoluwa Esther Ajayi — Executive Archive</title>
+
+    <meta name="description" content="Executive archive of Similoluwa Esther Ajayi — legal researcher, corporate and commercial law practitioner-in-training, technology and AI enthusiast, and institutional strategist.">
+    <meta name="author" content="Similoluwa Esther Ajayi">
+
     <link rel="icon" type="image/png" href="https://drive.google.com/thumbnail?id=1nuJ8xuejohzVU00FBkd5sJHUx-twLgt-&sz=w32">
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; background-color: #FAF9F6; color: #1C1C1C; line-height: 1.6; }
-        h1, h2, h3, h4, .serif { font-family: 'Bodoni Moda', serif; }
-        .accent-gold { color: #9A7B4F; }
-        .bg-onyx { background-color: #111111; }
-        .border-subtle { border-color: #E5E1DA; }
-        .fade-in { animation: fadeIn 1.5s ease-in; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        .magazine-dropcap::first-letter { font-family: 'Bodoni Moda'; font-size: 3rem; float: left; margin-right: 8px; color: #9A7B4F; line-height: 1; }
-        nav { position: sticky; top: 0; background: rgba(250, 249, 246, 0.95); z-index: 50; backdrop-filter: blur(5px); }
+        :root {
+            --ivory: #F8F7F3;
+            --paper: #FCFBF8;
+            --ink: #161616;
+            --muted: #6F6B64;
+            --line: #DEDAD2;
+            --gold: #98784A;
+            --deep: #111111;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--ivory);
+            color: var(--ink);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, .serif {
+            font-family: 'Bodoni Moda', serif;
+        }
+
+        ::selection {
+            background: #1A1A1A;
+            color: #fff;
+        }
+
+        .gold {
+            color: var(--gold);
+        }
+
+        .serif {
+            font-family: 'Bodoni Moda', serif;
+        }
+
+        .hairline {
+            border-color: var(--line);
+        }
+
+        .display {
+            letter-spacing: -0.055em;
+        }
+
+        .eyebrow {
+            font-size: 10px;
+            letter-spacing: .28em;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color .25s ease;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -7px;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width .25s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: #000;
+        }
+
+        .archive-card {
+            background: rgba(255,255,255,.55);
+            border: 1px solid var(--line);
+            transition:
+                transform .3s ease,
+                box-shadow .3s ease,
+                border-color .3s ease;
+        }
+
+        .archive-card:hover {
+            transform: translateY(-3px);
+            border-color: #C8C1B5;
+            box-shadow: 0 15px 35px rgba(0,0,0,.045);
+        }
+
+        .fade-up {
+            animation: fadeUp .9s ease both;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .image-frame {
+            overflow: hidden;
+            background: #E9E6DF;
+        }
+
+        .image-frame img {
+            transition: transform .7s ease, filter .7s ease;
+        }
+
+        .image-frame:hover img {
+            transform: scale(1.025);
+            filter: grayscale(0);
+        }
+
+        .metric-number {
+            font-family: 'Bodoni Moda', serif;
+            letter-spacing: -.04em;
+        }
+
+        .dark-section {
+            background: var(--deep);
+            color: #F4F2ED;
+        }
+
+        .dark-section .muted {
+            color: #A7A39B;
+        }
+
+        .dark-section .line-dark {
+            border-color: #30302E;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .mobile-menu.open {
+            display: block;
+        }
+
+        @media (max-width: 1024px) {
+            .desktop-nav {
+                display: none;
+            }
+
+            .mobile-button {
+                display: block;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .mobile-button {
+                display: none;
+            }
+        }
     </style>
 </head>
-<body class="fade-in">
 
-    <nav class="max-w-7xl mx-auto px-8 py-10 flex justify-between items-center border-b border-subtle">
-        <div class="text-2xl font-bold serif tracking-tighter italic">S.E.A.</div>
-        <div class="hidden lg:flex space-x-10 text-[10px] uppercase tracking-[0.3em] font-medium text-stone-500">
-            <a href="#metrics" class="hover:text-black transition">Performance</a>
-            <a href="#footprint" class="hover:text-black transition">Footprint</a>
-            <a href="#credentials" class="hover:text-black transition">Alignments</a>
-            <a href="#publications" class="hover:text-black transition">Archive</a>
-            <span class="text-stone-200">|</span><a href="https://drive.google.com/file/d/1VrmWZRMjwt6fK8Qy_qBEHmhK7ubODIhD/view?usp=drive_link" target="_blank" class="hover:text-black transition underline-offset-8 hover:underline">The Dossier (CV)</a>
-            <a href="mailto:simiajayi08@gmail.com" class="hover:text-black transition underline-offset-8 hover:underline">The Brief (Contact)</a>
-            <a href="https://bit.ly/4kQR907" target="_blank" class="hover:text-black transition underline-offset-8 hover:underline">The Network (LinkedIn)</a>
-            <a href="https://linktr.ee/simiajayi" target="_blank" class="hover:text-black transition underline-offset-8 hover:underline">The Ecosystem (Links)</a>
+<body>
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="sticky top-0 z-50 bg-[#F8F7F3]/95 backdrop-blur-md border-b hairline">
+    <nav class="max-w-7xl mx-auto px-6 md:px-10 py-5 flex items-center justify-between">
+
+        <a href="#" class="serif text-xl italic tracking-tight">
+            S.E.A.
+        </a>
+
+        <div class="desktop-nav flex items-center gap-8 text-[10px] uppercase tracking-[.2em] text-stone-500">
+            <a href="#profile" class="nav-link">Profile</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#leadership" class="nav-link">Leadership</a>
+            <a href="#credentials" class="nav-link">Credentials</a>
+            <a href="#publications" class="nav-link">Archive</a>
+
+            <span class="text-stone-300">|</span>
+
+            <a href="https://drive.google.com/file/d/1VrmWZRMjwt6fK8Qy_qBEHmhK7ubODIhD/view?usp=drive_link"
+               target="_blank"
+               class="hover:text-black transition">
+                CV
+            </a>
+
+            <a href="mailto:simiajayi08@gmail.com"
+               class="hover:text-black transition">
+                Contact
+            </a>
+
+            <a href="https://bit.ly/4kQR907"
+               target="_blank"
+               class="hover:text-black transition">
+                LinkedIn
+            </a>
         </div>
+
+        <button
+            onclick="toggleMenu()"
+            class="mobile-button text-xs uppercase tracking-[.2em] text-stone-500">
+            Menu
+        </button>
     </nav>
 
-    <header class="max-w-5xl mx-auto px-8 py-24">
-        <img src="https://lh3.googleusercontent.com/d/1PFEa0Dnf7VmDada-SI-hPrkvOK3JQQ6u" 
-             alt="Similoluwa Esther Ajayi" 
-             class="w-24 h-24 mb-10 rounded-full border border-stone-200 shadow-sm mx-auto md:mx-0">
-        
-        <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-4 uppercase tracking-tighter">
-            SIMILOLUWA ESTHER AJAYI
-        </h1>
-        <div class="mb-12">
-            <p class="text-xs uppercase tracking-[0.4em] accent-gold font-bold mb-3">
-                Corporate Law Scholar | Tech & Legal Innovator | Strategic Director
+    <div id="mobileMenu" class="mobile-menu border-t hairline bg-[#F8F7F3]">
+        <div class="px-6 py-6 flex flex-col gap-5 text-[11px] uppercase tracking-[.2em] text-stone-500">
+            <a href="#profile" onclick="toggleMenu()">Profile</a>
+            <a href="#experience" onclick="toggleMenu()">Experience</a>
+            <a href="#leadership" onclick="toggleMenu()">Leadership</a>
+            <a href="#credentials" onclick="toggleMenu()">Credentials</a>
+            <a href="#publications" onclick="toggleMenu()">Archive</a>
+            <a href="https://drive.google.com/file/d/1VrmWZRMjwt6fK8Qy_qBEHmhK7ubODIhD/view?usp=drive_link" target="_blank">Curriculum Vitae</a>
+            <a href="mailto:simiajayi08@gmail.com">Contact</a>
+            <a href="https://bit.ly/4kQR907" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section id="profile" class="max-w-7xl mx-auto px-6 md:px-10 pt-20 md:pt-32 pb-24">
+
+    <div class="grid lg:grid-cols-[1fr_320px] gap-16 lg:gap-24 items-end">
+
+        <div class="fade-up">
+
+            <p class="eyebrow gold mb-7">
+                Executive Archive · Nigeria
             </p>
-            <p class="text-lg italic text-stone-500 serif tracking-wide border-l-2 border-stone-200 pl-4">
-                The Confluence of Commercial Jurisprudence, Operational Strategy & Disciplined Elegance.
+
+            <h1 class="display text-5xl md:text-7xl lg:text-[6.5rem] leading-[.92] font-medium max-w-5xl">
+                Similoluwa<br>
+                Esther Ajayi
+            </h1>
+
+            <div class="mt-10 max-w-3xl">
+                <p class="text-xl md:text-2xl serif italic text-stone-600 leading-relaxed">
+                    Law, business, technology and institutional strategy —
+                    approached as questions of architecture, not merely administration.
+                </p>
+            </div>
+
+            <div class="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-[10px] uppercase tracking-[.22em] text-stone-500">
+                <span>Corporate & Commercial Law</span>
+                <span>Technology & AI</span>
+                <span>Data Protection</span>
+                <span>Institutional Strategy</span>
+            </div>
+
+        </div>
+
+        <div class="lg:pb-2">
+
+            <div class="image-frame aspect-[4/5]">
+                <img
+                    src="https://lh3.googleusercontent.com/d/1PFEa0Dnf7VmDada-SI-hPrkvOK3JQQ6u"
+                    alt="Similoluwa Esther Ajayi"
+                    class="w-full h-full object-cover grayscale"
+                >
+            </div>
+
+            <div class="mt-5 flex justify-between items-center">
+                <span class="eyebrow text-stone-400">
+                    AFE BABALOLA UNIVERSITY
+                </span>
+
+                <span class="text-[10px] text-stone-400">
+                    2026
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mt-24 pt-8 border-t hairline grid md:grid-cols-[180px_1fr] gap-8">
+
+        <p class="eyebrow text-stone-400">
+            Position
+        </p>
+
+        <div class="max-w-4xl">
+            <p class="text-lg md:text-xl text-stone-700 leading-relaxed">
+                Similoluwa Esther Ajayi is a law student and emerging legal professional
+                working across corporate and commercial law, technology, intellectual
+                property, data protection, advocacy and institutional development.
+                Her work increasingly centres on the design of systems that allow
+                people and institutions to perform beyond individual capacity.
+            </p>
+
+            <p class="mt-6 text-base text-stone-500 leading-relaxed">
+                Alongside legal training and practical experience, she has built and
+                directed programmes, committees, opportunity systems, research
+                initiatives and cross-functional projects spanning university,
+                professional and youth-led organisations.
             </p>
         </div>
 
-        <div class="border-t border-subtle pt-8 mb-12">
-            <h2 class="text-xs uppercase tracking-[0.4em] mb-4 text-stone-400 font-bold">🏛️ About Me</h2>
-            <div class="grid md:grid-cols-2 gap-12 items-start">
-                <div class="space-y-6">
-                    <p class="text-lg text-stone-700 font-light leading-relaxed magazine-dropcap">
-                        <span class="font-semibold text-black">Similoluwa Esther Ajayi</span> is a corporate law scholar, Zonal legal executive, and strategic innovator specializing in commercial jurisprudence, intellectual property, and legal technology applications.
-                    </p>
-                    <p class="text-md text-stone-600 font-light leading-relaxed">
-                        Currently reading Law at Afe Babalola University, Ado-Ekiti (ABUAD), Similoluwa operates at the high-stakes intersection of Traditional Jurisprudence, Tech Law, and Operational Leadership. As a regional director for the Law Students Association of Nigeria (LAWSAN) and an executive across key energy, tech, and advocacy frameworks, she leverages cross-disciplinary strategy to solve complex institutional problems.
-                    </p>
-                    <p class="text-md text-stone-600 font-light leading-relaxed">
-                        She reframes the concept of the "Soft Life" not as leisure, but as a rigorous discipline of high-performance habits, elite operational systems, and calculated reputational capital.
-                    </p>
-                </div>
-                <div class="bg-stone-100 p-8 rounded-sm">
-                    <blockquote class="italic text-stone-600 text-sm mb-6 leading-relaxed">
-                        "Excellence is not an act, but a habit. I am committed to advancing a legal career where character meets corporate competence, and where modern innovation amplifies traditional legal excellence."
-                    </blockquote>
-                    <div class="text-[10px] uppercase tracking-widest font-bold text-stone-400">
-                        📍 Based in Nigeria | Open to Global Mandates
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
-        <div class="border-t border-subtle pt-12 mb-12">
-            <h2 class="text-xs uppercase tracking-[0.4em] mb-8 text-stone-400 font-bold">📌 Core Competencies</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="serif italic text-xl mb-4 text-black">Legal & Corporate Strategy</h3>
-                    <ul class="space-y-3 text-sm text-stone-600 font-medium">
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Commercial & Business Law Review</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Intellectual Property Analysis</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Legal Research, Writing & Drafting</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Litigation & Advocacy Foundations</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="serif italic text-xl mb-4 text-black">Technology & Innovation</h3>
-                    <ul class="space-y-3 text-sm text-stone-600 font-medium">
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Legal Tech & AI-Augmented Research</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Data Protection & Privacy Frameworks</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Strategic Digital Positioning</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Editorial Design & Legal Publications</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="serif italic text-xl mb-4 text-black">Institutional Leadership</h3>
-                    <ul class="space-y-3 text-sm text-stone-600 font-medium">
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Zonal & Regional Administration</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> End-to-End Program Architecture</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> Cross-Functional Committee Oversight</li>
-                        <li class="flex items-center gap-3"><span class="accent-gold">•</span> High-Value Stakeholder Management</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+</section>
 
-        <div class="border-t border-subtle pt-12 mb-12">
-            <h2 class="text-xs uppercase tracking-[0.4em] mb-8 text-stone-400 font-bold">📂 Operational Mandates & Portfolio Portals</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="serif italic text-xl mb-4 text-black">⚡ Energy, Tech & Corporate Law Systems</h3>
-                    <div class="space-y-6 text-sm">
-                        <p class="text-stone-600 font-medium"><span class="text-black font-semibold">Head of Programs, Energy and Electricity Law Club:</span> Directing high-level statutory discourse, masterclasses, and programmatic strategy mapping the future of power sector regulations.</p>
-                        <p class="text-stone-600 font-medium"><span class="text-black font-semibold">Data Protection & Privacy Portfolio:</span> Evaluating information security laws, digital compliance standards, and the intersection of emerging technologies with corporate privacy frameworks.</p>
-                        <p class="text-stone-600 font-medium"><span class="text-black font-semibold">Business Law Focus:</span> Analyzing corporate governance structures, regulatory compliance mechanisms, and cross-border commercial transaction standards.</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="serif italic text-xl mb-4 text-black">🏛️ Regional Advocacy & Executive Leadership</h3>
-                    <div class="space-y-6 text-sm">
-                        <p class="text-stone-600 font-medium"><span class="text-black font-semibold">Zonal Head of Programs, Directorate of Student Rights (LAWSAN South-West):</span> Institutionalizing structural protections, policy interventions, and welfare frameworks for law students across the region.</p>
-                        <p class="text-stone-600 font-medium"><span class="text-black font-semibold">Aequitas Chamber Executive:</span> Orchestrating complex administrative systems, managing sub-committees, and ensuring disciplined execution of institutional mandates.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="border-t border-subtle pt-12">
-            <h2 class="text-xs uppercase tracking-[0.4em] mb-8 text-stone-400 font-bold">🛠️ Strategic Applications</h2>
-            <ul class="space-y-4 text-sm text-stone-600 font-medium">
-                <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">Persuasive Corporate Advocacy:</span> Merging bulletproof legal analysis with high-impact communication strategy.</span></li>
-                <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">AI-Augmented Legal Workflows:</span> Utilizing advanced digital tools to accelerate legal research precision and case strategy formulation.</span></li>
-                <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">Reputational Architecture:</span> Designing structured, high-value content networks that position legal concepts with premium visual and textual clarity.</span></li>
-            </ul>
-        </div>
-    </header>
+<!-- =========================================================
+     SELECTED PERFORMANCE
+========================================================= -->
 
-    <section id="metrics" class="max-w-6xl mx-auto px-8 py-24 bg-onyx text-white rounded-sm">
-        <div class="grid md:grid-cols-2 gap-16">
-            <div class="bg-white p-8 border border-stone-800 text-black shadow-2xl">
-                <h3 class="serif text-xl mb-1 accent-gold">Pinterest Global Reach</h3>
-                <p class="text-[9px] uppercase tracking-widest text-stone-400 mb-8 font-bold">Performance Archive: Real-Time Data</p>
-                
-                <div class="grid grid-cols-2 gap-y-8 gap-x-4">
-                    <div>
-                        <p class="text-[10px] uppercase tracking-tighter text-stone-400 mb-1">Impressions</p>
-                        <p class="text-3xl font-light">605.48k</p>
-                    </div>
-                    <div>
-                        <p class="text-[10px] uppercase tracking-tighter text-stone-400 mb-1">Total Audience</p>
-                        <p class="text-3xl font-light">427.99k</p>
-                    </div>
-                    <div>
-                        <p class="text-[10px] uppercase tracking-tighter text-stone-400 mb-1">Engagements</p>
-                        <p class="text-3xl font-light">45.87k</p>
-                    </div>
-                    <div>
-                        <p class="text-[10px] uppercase tracking-tighter text-stone-400 mb-1">Saves</p>
-                        <p class="text-3xl font-light">9.74k</p>
-                    </div>
-                    <div class="col-span-2 border-t border-stone-100 pt-6 mt-2">
-                        <div class="flex justify-between items-center mb-3">
-                            <span class="text-[10px] uppercase tracking-tighter text-stone-500 font-bold">Engaged Audience</span>
-                            <span class="text-lg font-medium">35.16k</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-[10px] uppercase tracking-tighter text-stone-500 font-bold">Outbound Clicks</span>
-                            <span class="text-lg font-medium">251</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="dark-section">
 
-            <div class="space-y-10">
-                <h2 class="text-xs uppercase tracking-[0.4em] text-stone-500 font-bold">2️⃣ Selected Case Studies & Strategic Notes</h2>
-                
-                <div class="group">
-                    <h4 class="serif text-xl mb-2 accent-gold italic">Intra and Inter-University Litigation</h4>
-                    <p class="text-sm text-stone-400 leading-relaxed font-light">
-                        Counsel in the National Maritime Moot Competition, Researcher and Legal Drafter for the National Data Protection Moot Competition, Lead Counsel, Aequitas Chamber, and Counsel in Law Week Moot Competitions (2024-2026).
-                    </p>
-                </div>
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-24">
 
-                <div class="group border-t border-stone-800 pt-6">
-                    <h4 class="serif text-xl mb-2 accent-gold italic">LSS Opportunity & Career Development Desk</h4>
-                    <p class="text-sm text-stone-400 leading-relaxed font-light">
-                        Initiator of the ABUAD LSS Opportunity Desk; created a centralized bridge between law students and professional opportunities, scholarships, and positioning to advance career development.
-                    </p>
-                </div>
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
 
-                <div class="group border-t border-stone-800 pt-6">
-                    <h4 class="serif text-xl mb-2 accent-gold italic">Early-Stage KYC Strategy (NECore Technologies)</h4>
-                    <p class="text-sm text-stone-400 leading-relaxed font-light">
-                        Provided high-level strategic advisory for NECore Technologies, focusing on user onboarding compliance and brand trust architecture.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-20 pt-16 border-t border-stone-800">
-            <h2 class="text-xs uppercase tracking-[0.4em] mb-10 text-stone-500 font-bold text-center">3️⃣ Forward Thesis: Current Intellectual Focus</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center px-4 border-r border-stone-800 last:border-0"><p class="text-[11px] text-stone-300 font-light uppercase tracking-widest">Digital identity & privacy in emerging economies</p></div>
-                <div class="text-center px-4 border-r border-stone-800 last:border-0"><p class="text-[11px] text-stone-300 font-light uppercase tracking-widest">Law as infrastructure, not just enforcement</p></div>
-                <div class="text-center px-4 border-r border-stone-800 last:border-0"><p class="text-[11px] text-stone-300 font-light uppercase tracking-widest">Personal branding as reputational capital</p></div>
-                <div class="text-center px-4"><p class="text-[11px] text-stone-300 font-light uppercase tracking-widest">The future of African legal-tech ecosystems</p></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="footprint" class="max-w-6xl mx-auto px-8 py-24">
-        <h2 class="serif text-3xl italic mb-12 text-stone-800">🎓 Professional Footprint</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="space-y-6">
-                <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Head of Programs | Energy and Electricity Law Club</h4>
-                    <p class="text-xs text-stone-500 italic">Directing strategic program blueprints, interactive regulation masterclasses, and future-focused energy law events.</p>
-                </div>
-                <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Brand Ambassador | Naos Simulations</h4>
-                    <p class="text-xs text-stone-500 italic">In charge of sending newly created simulations on different areas of law for students' to test themselves.</p>
-                </div>
-                <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Head of Programs | LAWSAN SouthWest</h4>
-                    <p class="text-xs text-stone-500 italic">Directorate of Student's Right - Regional leadership and program coordination.</p>
-                </div>
-                <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Head of Research | ADR Committee</h4>
-                    <p class="text-xs text-stone-500 italic">Drafted ADR day mediation scenarios and Law Week Arbitration Scenarios.</p>
-                </div>
-                <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Head of Research | Aequitas Chamber</h4>
-                    <p class="text-xs text-stone-500 italic">Drafted briefs and originating process applications for Chamber Week and Moot Competitions.</p>
-                </div>
-                <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Student (Legal) Researcher & Writer | Wale University</h4>
-                    <p class="text-xs text-stone-500 italic">Researching and drafting legal publications.</p>
-                </div>
-            </div>
-
-            <div class="space-y-6">
-                <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Academic Mentor | SRC Mentorship Committee</h4>
-                    <p class="text-xs text-stone-500 italic">Assisting 100L and 200L DE students in academic transitioning through tutorials and resource sharing.</p>
-                </div>
-                <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Campus Ambassador | Cowrywise</h4>
-                    <p class="text-xs text-stone-500 italic">Promoting digital financial literacy and savings culture on campus.</p>
-                </div>
-                <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Campus Ambassador of the Month | My Lexova AI</h4>
-                    <p class="text-xs text-stone-500 italic">Championing AI-enabled legal research literacy among students. Awarded Ambassador of the Month for exceptional market adoption metrics.</p>
-                </div>
-                <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Campus Ambassador | LawGlobal Hub</h4>
-                    <p class="text-xs text-stone-500 italic">Facilitating international legal discourse and cross-border networking.</p>
-                </div>
-                <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">Event & Training Coordinator | DPPC</h4>
-                    <p class="text-xs text-stone-500 italic">Planned the 2-day rally on UN Activism; hosted monthly practical general meetings on data protection and privacy.</p>
-                </div>
-                <div class="p-6 border border-subtle bg-white hover:shadow-md transition">
-                    <h4 class="font-bold text-sm uppercase mb-1">ABUAD IP Club | Academic Committee</h4>
-                    <p class="text-xs text-stone-500 italic">Lead researcher/drafter for AIPC Podcast and Essay Topics on the 2026 IP Theme: IP and Sports.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="credentials" class="max-w-6xl mx-auto px-8 py-24 border-t border-subtle">
-        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
             <div>
-                <h2 class="serif text-3xl italic text-stone-800">📜 Alignments & Credentials</h2>
-                <p class="text-[10px] uppercase tracking-[0.3em] text-stone-400 mt-2 font-bold">Institutional footprints & specializations</p>
-            </div>
-        </div>
-        
-        <div class="grid md:grid-cols-2 gap-12">
-            <div class="p-8 bg-stone-50 border border-subtle rounded-sm">
-                <h3 class="serif italic text-xl mb-4 text-black">Professional Memberships</h3>
-                <div class="w-12 h-[1px] bg-stone-300 mb-6"></div>
-                <ul class="space-y-4 text-sm text-stone-600 font-medium">
-                    <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">American Bar Association (ABA)</span> — Business Law, Intellectual Property, Litigation, Environment & Energy, and International Law Section</span></li>
-                    <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">Energy Institute, UK</span> — Student Member</span></li>
-                    <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">Data Protection & Privacy Club (DPPC)</span> — Event and Training Coordinator</span></li>
-                    <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">Energy & Electricity Law Club</span> — Head of Programs</span></li>
-                    <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">Aequitas Student Chambers / ADR Committee</span> — Head of Research</span></li>
-                    <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">ABUAD IP Club / Nigerian Intellectual Property Club</span> — Institutional Footprint</span></li>
-                    <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">Literary & Debate Society / Academic Committee</span> — LSS ABUAD</span></li>
-                </ul>
+                <p class="eyebrow text-stone-500 mb-5">
+                    Selected Performance
+                </p>
+
+                <h2 class="serif text-4xl md:text-5xl font-normal">
+                    Evidence of reach.
+                </h2>
             </div>
 
-            <div class="p-8 bg-stone-50 border border-subtle rounded-sm">
-                <h3 class="serif italic text-xl mb-4 text-black">Selected Certifications</h3>
-                <div class="w-12 h-[1px] bg-stone-300 mb-6"></div>
-                <ul class="space-y-4 text-sm text-stone-600 font-medium">
-                    <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">WIPO (World Intellectual Property Organization)</span> — Copyright Law Specialization (2024)</span></li>
-                    <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">WIPO (World Intellectual Property Organization)</span> — General Course on Intellectual Property (2024)</span></li>
-                    <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">Legal Diamonds Academy</span> — Advanced Legal Research & Writing (2025)</span></li>
-                    <li class="flex items-start gap-3"><span class="accent-gold mt-1">•</span> <span><span class="text-black font-semibold">WIDB / Microsoft</span> — Digital Business & Enterprise Training (2024)</span></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+            <p class="muted text-sm max-w-md leading-relaxed">
+                Selected digital performance indicators retained as part of the
+                wider professional archive.
+            </p>
 
-    <section id="publications" class="max-w-6xl mx-auto px-8 py-24 bg-stone-50 border-y border-subtle">
-        <div class="grid md:grid-cols-2 gap-16">
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-6 border-t line-dark">
+
+            <div class="py-10 pr-6 border-b lg:border-b-0 lg:border-r line-dark">
+                <p class="eyebrow text-stone-500 mb-5">Impressions</p>
+                <p class="metric-number text-4xl md:text-5xl">605.48k</p>
+            </div>
+
+            <div class="py-10 px-6 border-b lg:border-b-0 lg:border-r line-dark">
+                <p class="eyebrow text-stone-500 mb-5">Audience</p>
+                <p class="metric-number text-4xl md:text-5xl">427.99k</p>
+            </div>
+
+            <div class="py-10 px-6 border-b lg:border-b-0 lg:border-r line-dark">
+                <p class="eyebrow text-stone-500 mb-5">Engagements</p>
+                <p class="metric-number text-4xl md:text-5xl">45.87k</p>
+            </div>
+
+            <div class="py-10 px-6 border-b lg:border-b-0 lg:border-r line-dark">
+                <p class="eyebrow text-stone-500 mb-5">Saves</p>
+                <p class="metric-number text-4xl md:text-5xl">9.74k</p>
+            </div>
+
+            <div class="py-10 px-6 border-b lg:border-b-0 lg:border-r line-dark">
+                <p class="eyebrow text-stone-500 mb-5">Engaged Audience</p>
+                <p class="metric-number text-4xl md:text-5xl">35.16k</p>
+            </div>
+
+            <div class="py-10 pl-6">
+                <p class="eyebrow text-stone-500 mb-5">Outbound Clicks</p>
+                <p class="metric-number text-4xl md:text-5xl">251</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EXPERIENCE
+========================================================= -->
+
+<section id="experience" class="max-w-7xl mx-auto px-6 md:px-10 py-28">
+
+    <div class="grid lg:grid-cols-[280px_1fr] gap-16">
+
+        <div>
+            <p class="eyebrow gold mb-5">
+                01 · Experience
+            </p>
+
+            <h2 class="serif text-4xl md:text-5xl italic">
+                Professional<br>Footprint
+            </h2>
+
+            <p class="text-sm text-stone-500 mt-6 leading-relaxed">
+                A record of selected professional, research, advisory and
+                programme responsibilities.
+            </p>
+        </div>
+
+        <div class="border-t hairline">
+
+            <article class="py-8 border-b hairline grid md:grid-cols-[1fr_180px] gap-5">
+                <div>
+                    <h3 class="font-medium text-base">
+                        Head of Programs · Energy & Electricity Law Club
+                    </h3>
+                    <p class="text-sm text-stone-500 mt-2">
+                        Directing programme architecture, regulatory masterclasses,
+                        legal discourse and future-focused energy law initiatives.
+                    </p>
+                </div>
+                <p class="eyebrow text-stone-400 md:text-right">
+                    Leadership
+                </p>
+            </article>
+
+            <article class="py-8 border-b hairline grid md:grid-cols-[1fr_180px] gap-5">
+                <div>
+                    <h3 class="font-medium text-base">
+                        Head of Programs · LAWSAN South-West
+                    </h3>
+                    <p class="text-sm text-stone-500 mt-2">
+                        Regional programme leadership, state-level coordination,
+                        committee architecture and institutional continuity.
+                    </p>
+                </div>
+                <p class="eyebrow text-stone-400 md:text-right">
+                    Regional
+                </p>
+            </article>
+
+            <article class="py-8 border-b hairline grid md:grid-cols-[1fr_180px] gap-5">
+                <div>
+                    <h3 class="font-medium text-base">
+                        Research Assistant · OGEES Institute / ILA Nigeria
+                    </h3>
+                    <p class="text-sm text-stone-500 mt-2">
+                        Research work within an international-law and institutional
+                        policy environment.
+                    </p>
+                </div>
+                <p class="eyebrow text-stone-400 md:text-right">
+                    Research
+                </p>
+            </article>
+
+            <article class="py-8 border-b hairline grid md:grid-cols-[1fr_180px] gap-5">
+                <div>
+                    <h3 class="font-medium text-base">
+                        Legal Intern · SimmonsCooper Partners
+                    </h3>
+                    <p class="text-sm text-stone-500 mt-2">
+                        Practical exposure to legal research, drafting, advisory
+                        work and commercial legal practice.
+                    </p>
+                </div>
+                <p class="eyebrow text-stone-400 md:text-right">
+                    Legal Practice
+                </p>
+            </article>
+
+            <article class="py-8 border-b hairline grid md:grid-cols-[1fr_180px] gap-5">
+                <div>
+                    <h3 class="font-medium text-base">
+                        Undergraduate Intern · Wole Olanipekun & Co.
+                    </h3>
+                    <p class="text-sm text-stone-500 mt-2">
+                        Legal research, drafting and exposure to high-level legal
+                        practice.
+                    </p>
+                </div>
+                <p class="eyebrow text-stone-400 md:text-right">
+                    Legal Practice
+                </p>
+            </article>
+
+            <article class="py-8 border-b hairline grid md:grid-cols-[1fr_180px] gap-5">
+                <div>
+                    <h3 class="font-medium text-base">
+                        Legal Intern · Record of Law
+                    </h3>
+                    <p class="text-sm text-stone-500 mt-2">
+                        Legal research, case analysis and publication-oriented
+                        writing.
+                    </p>
+                </div>
+                <p class="eyebrow text-stone-400 md:text-right">
+                    Research
+                </p>
+            </article>
+
+            <article class="py-8 grid md:grid-cols-[1fr_180px] gap-5">
+                <div>
+                    <h3 class="font-medium text-base">
+                        Strategic Advisory · NECore Technologies
+                    </h3>
+                    <p class="text-sm text-stone-500 mt-2">
+                        Early-stage advisory relating to KYC strategy, onboarding
+                        compliance and brand trust architecture.
+                    </p>
+                </div>
+                <p class="eyebrow text-stone-400 md:text-right">
+                    Strategy
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INSTITUTIONAL LEADERSHIP
+========================================================= -->
+
+<section id="leadership" class="border-y hairline bg-[#F2F0EB]">
+
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-28">
+
+        <div class="max-w-3xl mb-16">
+
+            <p class="eyebrow gold mb-5">
+                02 · Institutional Leadership
+            </p>
+
+            <h2 class="serif text-4xl md:text-6xl italic">
+                Building beyond the role.
+            </h2>
+
+            <p class="mt-7 text-base md:text-lg text-stone-600 leading-relaxed">
+                The archive records not only positions held, but the systems,
+                programmes and institutional responsibilities attached to them.
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+            <div class="archive-card p-7">
+                <p class="eyebrow gold mb-5">Opportunity Systems</p>
+                <h3 class="serif text-2xl mb-4">
+                    LSS Opportunity Office
+                </h3>
+                <p class="text-sm text-stone-600">
+                    Initiator of the ABUAD LSS Opportunity Office, a centralised
+                    opportunity infrastructure connecting students with scholarships,
+                    internships, externships, research opportunities and other
+                    professional development pathways.
+                </p>
+            </div>
+
+            <div class="archive-card p-7">
+                <p class="eyebrow gold mb-5">Regional Administration</p>
+                <h3 class="serif text-2xl mb-4">
+                    LAWSAN South-West
+                </h3>
+                <p class="text-sm text-stone-600">
+                    Leading programme coordination across the South-West structure,
+                    including state-level reporting, committee architecture and
+                    institutional transition systems.
+                </p>
+            </div>
+
+            <div class="archive-card p-7">
+                <p class="eyebrow gold mb-5">Academic Development</p>
+                <h3 class="serif text-2xl mb-4">
+                    SRC Mentorship
+                </h3>
+                <p class="text-sm text-stone-600">
+                    Supporting 100L and 200L direct-entry students through tutorials,
+                    academic transition support and resource sharing.
+                </p>
+            </div>
+
+            <div class="archive-card p-7">
+                <p class="eyebrow gold mb-5">Research & ADR</p>
+                <h3 class="serif text-2xl mb-4">
+                    Aequitas Chamber
+                </h3>
+                <p class="text-sm text-stone-600">
+                    Research and drafting responsibilities covering briefs,
+                    originating process applications, moot materials and
+                    advocacy exercises.
+                </p>
+            </div>
+
+            <div class="archive-card p-7">
+                <p class="eyebrow gold mb-5">Data & Privacy</p>
+                <h3 class="serif text-2xl mb-4">
+                    DPPC
+                </h3>
+                <p class="text-sm text-stone-600">
+                    Event and training coordination, including practical sessions
+                    on data protection and privacy and a two-day UN Activism rally.
+                </p>
+            </div>
+
+            <div class="archive-card p-7">
+                <p class="eyebrow gold mb-5">Intellectual Property</p>
+                <h3 class="serif text-2xl mb-4">
+                    ABUAD IP Club
+                </h3>
+                <p class="text-sm text-stone-600">
+                    Research and drafting contributions to podcast and essay
+                    initiatives around contemporary intellectual-property themes,
+                    including IP and Sports.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STRATEGIC PORTFOLIO
+========================================================= -->
+
+<section class="max-w-7xl mx-auto px-6 md:px-10 py-28">
+
+    <div class="grid lg:grid-cols-[280px_1fr] gap-16">
+
+        <div>
+            <p class="eyebrow gold mb-5">
+                03 · Strategic Portfolio
+            </p>
+
+            <h2 class="serif text-4xl md:text-5xl italic">
+                Areas of<br>Work
+            </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-x-16 gap-y-14">
+
             <div>
-                <h2 class="serif text-2xl italic mb-8 text-stone-800">Blog Posts (Magazine Formats)</h2>
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle">
-                        <span class="text-xs font-semibold uppercase">1. Why Building a Personal Brand Is Today’s CV</span>
-                        <a href="#" class="text-[9px] font-bold bg-black text-white px-4 py-2 uppercase">Access</a>
-                    </div>
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle">
-                        <span class="text-xs font-semibold uppercase">2. How to Write Like a Lawyer, Think Like a Brand</span>
-                        <a href="#" class="text-[9px] font-bold border border-black px-4 py-2 uppercase transition hover:bg-black hover:text-white">Access</a>
-                    </div>
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle">
-                        <span class="text-xs font-semibold uppercase">3. Balancing Poise and Power: The Unspoken Curriculum</span>
-                        <a href="#" class="text-[9px] font-bold border border-black px-4 py-2 uppercase transition hover:bg-black hover:text-white">Access</a>
-                    </div>
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle">
-                        <span class="text-xs font-semibold uppercase">4. Digital Diplomacy: Influence with Integrity</span>
-                        <a href="#" class="text-[9px] font-bold border border-black px-4 py-2 uppercase transition hover:bg-black hover:text-white">Access</a>
-                    </div>
-                </div>
+                <p class="eyebrow text-stone-400 mb-4">01</p>
+                <h3 class="serif text-2xl mb-3">
+                    Corporate & Commercial Law
+                </h3>
+                <p class="text-sm text-stone-600">
+                    Business law review, corporate governance, regulatory compliance,
+                    commercial transactions and strategic legal analysis.
+                </p>
             </div>
+
             <div>
-                <h2 class="serif text-2xl italic mb-8 text-stone-800">Ajebutter Papers</h2>
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle">
-                        <span class="text-xs font-semibold uppercase">Edition I — Why Grace Is Still a Power Strategy</span>
-                        <a href="#" class="text-[9px] font-bold bg-black text-white px-4 py-2 uppercase">Read</a>
-                    </div>
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle">
-                        <span class="text-xs font-semibold uppercase">Edition II — The Student’s Guide to Digital Relevance</span>
-                        <a href="#" class="text-[9px] font-bold border border-black px-4 py-2 uppercase">Read</a>
-                    </div>
-                    <div class="flex justify-between items-center bg-white p-5 border border-subtle">
-                        <span class="text-xs font-semibold uppercase">Edition III — Notes on Soft Leadership</span>
-                        <a href="#" class="text-[9px] font-bold border border-black px-4 py-2 uppercase">Read</a>
-                    </div>
-                </div>
+                <p class="eyebrow text-stone-400 mb-4">02</p>
+                <h3 class="serif text-2xl mb-3">
+                    Technology, AI & Data
+                </h3>
+                <p class="text-sm text-stone-600">
+                    Legal technology, AI-augmented research, digital identity,
+                    privacy and emerging data-protection frameworks.
+                </p>
             </div>
-        </div>
-    </section>
 
-    <section id="gallery" class="max-w-6xl mx-auto px-8 py-24">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-12">
             <div>
-                <h2 class="serif text-3xl italic text-stone-800">Curated Visuals</h2>
-                <p class="text-[10px] uppercase tracking-[0.3em] text-stone-400 mt-2 font-bold">The Archive in Motion</p>
+                <p class="eyebrow text-stone-400 mb-4">03</p>
+                <h3 class="serif text-2xl mb-3">
+                    Intellectual Property
+                </h3>
+                <p class="text-sm text-stone-600">
+                    Copyright, intellectual-property research, legal education and
+                    contemporary questions at the intersection of IP, technology
+                    and business.
+                </p>
             </div>
-            <div class="text-[10px] text-stone-400 italic mt-4 md:mt-0">
-                A study of presence, leadership, and disciplined aesthetics.
+
+            <div>
+                <p class="eyebrow text-stone-400 mb-4">04</p>
+                <h3 class="serif text-2xl mb-3">
+                    Institutional Strategy
+                </h3>
+                <p class="text-sm text-stone-600">
+                    Programme architecture, committee systems, stakeholder
+                    coordination, continuity planning and institutional development.
+                </p>
+            </div>
+
+            <div>
+                <p class="eyebrow text-stone-400 mb-4">05</p>
+                <h3 class="serif text-2xl mb-3">
+                    Energy & Electricity
+                </h3>
+                <p class="text-sm text-stone-600">
+                    Engagement with energy regulation, electricity law, policy
+                    discourse and the institutional questions shaping the power sector.
+                </p>
+            </div>
+
+            <div>
+                <p class="eyebrow text-stone-400 mb-4">06</p>
+                <h3 class="serif text-2xl mb-3">
+                    Advocacy & Litigation
+                </h3>
+                <p class="text-sm text-stone-600">
+                    Moot competitions, mediation and arbitration scenarios,
+                    legal drafting and advocacy-oriented research.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SELECTED ROLES / AMBASSADORSHIPS
+========================================================= -->
+
+<section class="dark-section">
+
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-28">
+
+        <div class="grid lg:grid-cols-[280px_1fr] gap-16">
+
+            <div>
+                <p class="eyebrow text-stone-500 mb-5">
+                    04 · Selected Affiliations
+                </p>
+
+                <h2 class="serif text-4xl md:text-5xl italic">
+                    The wider<br>ecosystem.
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-x-12">
+
+                <div class="border-t line-dark py-7">
+                    <h3 class="text-sm font-medium">Brand Ambassador · Naos Simulations</h3>
+                    <p class="muted text-sm mt-2">
+                        Facilitating student engagement with newly developed
+                        legal simulations across different areas of law.
+                    </p>
+                </div>
+
+                <div class="border-t line-dark py-7">
+                    <h3 class="text-sm font-medium">Campus Ambassador · Cowrywise</h3>
+                    <p class="muted text-sm mt-2">
+                        Promoting digital financial literacy and savings culture.
+                    </p>
+                </div>
+
+                <div class="border-t line-dark py-7">
+                    <h3 class="text-sm font-medium">Campus Ambassador · My Lexova AI</h3>
+                    <p class="muted text-sm mt-2">
+                        Championing AI-enabled legal research literacy; recognised
+                        as Campus Ambassador of the Month.
+                    </p>
+                </div>
+
+                <div class="border-t line-dark py-7">
+                    <h3 class="text-sm font-medium">Campus Ambassador · LawGlobal Hub</h3>
+                    <p class="muted text-sm mt-2">
+                        Facilitating international legal discourse and
+                        cross-border networking.
+                    </p>
+                </div>
+
+                <div class="border-t line-dark py-7">
+                    <h3 class="text-sm font-medium">American Bar Association</h3>
+                    <p class="muted text-sm mt-2">
+                        Engagement across Business Law, Intellectual Property,
+                        Litigation, Environment & Energy, and International Law.
+                    </p>
+                </div>
+
+                <div class="border-t line-dark py-7">
+                    <h3 class="text-sm font-medium">Energy Institute, UK</h3>
+                    <p class="muted text-sm mt-2">
+                        Student membership within the global energy professional ecosystem.
+                    </p>
+                </div>
+
+                <div class="border-t line-dark py-7">
+                    <h3 class="text-sm font-medium">Lex Lata</h3>
+                    <p class="muted text-sm mt-2">
+                        International law internship and research exposure.
+                    </p>
+                </div>
+
+                <div class="border-t line-dark py-7">
+                    <h3 class="text-sm font-medium">International Law Association · Nigeria</h3>
+                    <p class="muted text-sm mt-2">
+                        Research and professional engagement within the
+                        international-law community.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CREDENTIALS
+========================================================= -->
+
+<section id="credentials" class="max-w-7xl mx-auto px-6 md:px-10 py-28">
+
+    <div class="grid lg:grid-cols-2 gap-20">
+
+        <div>
+
+            <p class="eyebrow gold mb-5">
+                05 · Credentials
+            </p>
+
+            <h2 class="serif text-4xl md:text-5xl italic mb-12">
+                Professional<br>Formation
+            </h2>
+
+            <div class="space-y-7">
+
+                <div class="border-t hairline pt-6">
+                    <h3 class="font-medium">WIPO — Copyright Law Specialization</h3>
+                    <p class="text-sm text-stone-500 mt-1">2024</p>
+                </div>
+
+                <div class="border-t hairline pt-6">
+                    <h3 class="font-medium">WIPO — General Course on Intellectual Property</h3>
+                    <p class="text-sm text-stone-500 mt-1">2024</p>
+                </div>
+
+                <div class="border-t hairline pt-6">
+                    <h3 class="font-medium">Legal Diamonds Academy — Advanced Legal Research & Writing</h3>
+                    <p class="text-sm text-stone-500 mt-1">2025</p>
+                </div>
+
+                <div class="border-t hairline pt-6">
+                    <h3 class="font-medium">WIDB / Microsoft — Digital Business & Enterprise Training</h3>
+                    <p class="text-sm text-stone-500 mt-1">2024</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <p class="eyebrow text-stone-400 mb-5">
+                Institutional Affiliations
+            </p>
+
+            <div class="border-t hairline">
+
+                <div class="py-6 border-b hairline">
+                    <p class="font-medium">American Bar Association</p>
+                    <p class="text-sm text-stone-500 mt-1">
+                        Business Law · Intellectual Property · Litigation ·
+                        Environment & Energy · International Law
+                    </p>
+                </div>
+
+                <div class="py-6 border-b hairline">
+                    <p class="font-medium">Energy Institute, UK</p>
+                    <p class="text-sm text-stone-500 mt-1">Student Member</p>
+                </div>
+
+                <div class="py-6 border-b hairline">
+                    <p class="font-medium">Data Protection & Privacy Club</p>
+                    <p class="text-sm text-stone-500 mt-1">Event & Training Coordinator</p>
+                </div>
+
+                <div class="py-6 border-b hairline">
+                    <p class="font-medium">Energy & Electricity Law Club</p>
+                    <p class="text-sm text-stone-500 mt-1">Head of Programs</p>
+                </div>
+
+                <div class="py-6 border-b hairline">
+                    <p class="font-medium">Aequitas Student Chambers / ADR Committee</p>
+                    <p class="text-sm text-stone-500 mt-1">Head of Research</p>
+                </div>
+
+                <div class="py-6 border-b hairline">
+                    <p class="font-medium">ABUAD IP Club / Nigerian Intellectual Property Club</p>
+                    <p class="text-sm text-stone-500 mt-1">Institutional Footprint</p>
+                </div>
+
+                <div class="py-6">
+                    <p class="font-medium">Literary & Debate Society / Academic Committee</p>
+                    <p class="text-sm text-stone-500 mt-1">LSS ABUAD</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     RESEARCH / ADVOCACY
+========================================================= -->
+
+<section class="border-y hairline bg-[#F2F0EB]">
+
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-28">
+
+        <div class="grid lg:grid-cols-[280px_1fr] gap-16">
+
+            <div>
+                <p class="eyebrow gold mb-5">
+                    06 · Research & Advocacy
+                </p>
+
+                <h2 class="serif text-4xl md:text-5xl italic">
+                    Work at<br>the frontier.
+                </h2>
+            </div>
+
+            <div class="space-y-0">
+
+                <div class="archive-card p-8">
+                    <p class="eyebrow text-stone-400 mb-4">Moot & Advocacy</p>
+                    <h3 class="serif text-2xl mb-3">
+                        Intra & Inter-University Advocacy
+                    </h3>
+                    <p class="text-sm text-stone-600">
+                        Counsel in the National Maritime Moot Competition;
+                        researcher and legal drafter for the National Data
+                        Protection Moot Competition; Lead Counsel, Aequitas
+                        Chamber; and counsel in Law Week moot competitions
+                        between 2024 and 2026.
+                    </p>
+                </div>
+
+                <div class="archive-card p-8 mt-5">
+                    <p class="eyebrow text-stone-400 mb-4">Legal Research</p>
+                    <h3 class="serif text-2xl mb-3">
+                        Research, Writing & Drafting
+                    </h3>
+                    <p class="text-sm text-stone-600">
+                        Legal research, case analysis, legal publications,
+                        briefs, originating processes, mediation scenarios,
+                        arbitration scenarios and academic research projects.
+                    </p>
+                </div>
+
+                <div class="archive-card p-8 mt-5">
+                    <p class="eyebrow text-stone-400 mb-4">Current Intellectual Focus</p>
+                    <h3 class="serif text-2xl mb-6">
+                        Questions under examination
+                    </h3>
+
+                    <div class="grid md:grid-cols-2 gap-5">
+
+                        <p class="text-sm text-stone-600">
+                            Digital identity and privacy in emerging economies
+                        </p>
+
+                        <p class="text-sm text-stone-600">
+                            Law as infrastructure, not merely enforcement
+                        </p>
+
+                        <p class="text-sm text-stone-600">
+                            Personal branding as reputational capital
+                        </p>
+
+                        <p class="text-sm text-stone-600">
+                            The future of African legal-technology ecosystems
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PUBLICATIONS
+========================================================= -->
+
+<section id="publications" class="max-w-7xl mx-auto px-6 md:px-10 py-28">
+
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14">
+
+        <div>
+            <p class="eyebrow gold mb-5">
+                07 · Publications
+            </p>
+
+            <h2 class="serif text-4xl md:text-5xl italic">
+                Selected Archive
+            </h2>
+        </div>
+
+        <p class="text-sm text-stone-500 max-w-md">
+            Writing and editorial work retained as part of the broader
+            intellectual record.
+        </p>
+
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-16">
+
+        <div>
+
+            <p class="eyebrow text-stone-400 mb-6">
+                Essays & Articles
+            </p>
+
+            <div class="border-t hairline">
+
+                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+                    <span class="serif text-xl group-hover:italic transition">
+                        Why Building a Personal Brand Is Today's CV
+                    </span>
+                    <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
+                        Read
+                    </span>
+                </a>
+
+                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+                    <span class="serif text-xl group-hover:italic transition">
+                        How to Write Like a Lawyer, Think Like a Brand
+                    </span>
+                    <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
+                        Read
+                    </span>
+                </a>
+
+                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+                    <span class="serif text-xl group-hover:italic transition">
+                        Balancing Poise and Power: The Unspoken Curriculum
+                    </span>
+                    <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
+                        Read
+                    </span>
+                </a>
+
+                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+                    <span class="serif text-xl group-hover:italic transition">
+                        Digital Diplomacy: Influence with Integrity
+                    </span>
+                    <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
+                        Read
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <p class="eyebrow text-stone-400 mb-6">
+                Ajebutter Papers
+            </p>
+
+            <div class="border-t hairline">
+
+                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+                    <span class="serif text-xl group-hover:italic transition">
+                        Edition I — Why Grace Is Still a Power Strategy
+                    </span>
+                    <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
+                        Read
+                    </span>
+                </a>
+
+                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+                    <span class="serif text-xl group-hover:italic transition">
+                        Edition II — The Student's Guide to Digital Relevance
+                    </span>
+                    <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
+                        Read
+                    </span>
+                </a>
+
+                <a href="#" class="group flex items-center justify-between gap-8 py-6 border-b hairline">
+                    <span class="serif text-xl group-hover:italic transition">
+                        Edition III — Notes on Soft Leadership
+                    </span>
+                    <span class="text-[9px] uppercase tracking-widest text-stone-400 group-hover:text-black">
+                        Read
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     VISUAL ARCHIVE
+========================================================= -->
+
+<section class="max-w-7xl mx-auto px-6 md:px-10 pb-28">
+
+    <div class="border-t hairline pt-12 mb-12">
+
+        <div class="flex flex-col md:flex-row justify-between gap-6">
+
+            <div>
+                <p class="eyebrow gold mb-4">
+                    08 · Visual Archive
+                </p>
+
+                <h2 class="serif text-4xl italic">
+                    Presence & Practice
+                </h2>
+            </div>
+
+            <p class="text-sm text-stone-500 max-w-sm md:text-right">
+                A visual record of professional presence, academic work,
+                leadership and institutional engagement.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+        <div class="space-y-4">
+            <div class="image-frame aspect-[3/4]">
+                <img src="https://drive.google.com/thumbnail?id=1iZ49M_FrFVV5tVePkyIcUH4KwyadgHLg&sz=w1000"
+                     alt="Leadership"
+                     class="w-full h-full object-cover grayscale">
+            </div>
+
+            <div class="image-frame aspect-square">
+                <img src="https://drive.google.com/thumbnail?id=1UXOt5QCxMAEbAT0VQP-b0M2l4SgFjuD3&sz=w1000"
+                     alt="Strategic Sessions"
+                     class="w-full h-full object-cover grayscale">
             </div>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="space-y-4">
-                <div class="bg-stone-200 aspect-[3/4] overflow-hidden rounded-sm group relative">
-                    <img src="https://drive.google.com/thumbnail?id=1iZ49M_FrFVV5tVePkyIcUH4KwyadgHLg&sz=w1000" alt="Leadership" class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-700">
-                </div>
-                <div class="bg-stone-200 aspect-square overflow-hidden rounded-sm group relative">
-                    <img src="https://drive.google.com/thumbnail?id=1UXOt5QCxMAEbAT0VQP-b0M2l4SgFjuD3&sz=w1000" alt="Strategic Sessions" class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-700">
-                </div>
+
+        <div class="pt-10 space-y-4">
+
+            <div class="image-frame aspect-square">
+                <img src="https://drive.google.com/thumbnail?id=1nuJ8xuejohzVU00FBkd5sJHUx-twLgt-&sz=w1000"
+                     alt="Academic Excellence"
+                     class="w-full h-full object-cover grayscale">
             </div>
 
-            <div class="pt-12 space-y-4">
-                <div class="bg-stone-200 aspect-square overflow-hidden rounded-sm group relative">
-                    <img src="https://drive.google.com/thumbnail?id=1nuJ8xuejohzVU00FBkd5sJHUx-twLgt-&sz=w1000" alt="Academic Excellence" class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-700">
-                </div>
-                <div class="bg-stone-200 aspect-[3/4] overflow-hidden rounded-sm group relative">
-                    <img src="https://drive.google.com/thumbnail?id=18DLcC6q1LwDIasIvXOFfXAJPm3Z_nNIC&sz=w1000" alt="Professional Presence" class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-700">
-                </div>
+            <div class="image-frame aspect-[3/4]">
+                <img src="https://drive.google.com/thumbnail?id=18DLcC6q1LwDIasIvXOFfXAJPm3Z_nNIC&sz=w1000"
+                     alt="Professional Presence"
+                     class="w-full h-full object-cover grayscale">
             </div>
 
-            <div class="space-y-4">
-                <div class="bg-stone-200 aspect-[3/4] overflow-hidden rounded-sm group relative">
-                    <img src="https://drive.google.com/thumbnail?id=1nuJ8xuejohzVU00FBkd5sJHUx-twLgt-&sz=w1000" alt="Legal Research" class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-700">
-                </div>
-                <div class="bg-stone-200 aspect-square overflow-hidden rounded-sm group relative">
-                    <img src="https://lh3.googleusercontent.com/d/153zbdd742wEkWK7t9tI6p6koaygkv1Jo" alt="Networking" class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-700">
-                </div>
-            </div>
-
-            <div class="pt-12 space-y-4">
-                <div class="bg-stone-200 aspect-square overflow-hidden rounded-sm group relative">
-                    <img src="https://drive.google.com/thumbnail?id=1fkKdKgxIu916nsxBGCjljhvH1QpUvtAw&sz=w1000" alt="Advocacy" class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-700">
-                </div>
-                <div class="bg-stone-200 aspect-[3/4] overflow-hidden rounded-sm group relative">
-                    <img src="https://drive.google.com/thumbnail?id=18DLcC6q1LwDIasIvXOFfXAJPm3Z_nNIC&sz=w1000" alt="Executive Posture" class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-700">
-                </div>
-            </div>
         </div>
-    </section>
 
-    <footer class="max-w-7xl mx-auto px-8 py-12 mt-12 border-t border-subtle flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase tracking-widest font-medium text-stone-400">
-        <div>&copy; 2026 S.E. AJAYI. All Rights Reserved.</div>
-        <div class="flex space-x-6">
-            <a href="#metrics" class="hover:text-black transition">Top</a>
-            <span>•</span>
-            <a href="mailto:simiajayi08@gmail.com" class="hover:text-black transition">Direct Mandate</a>
+
+        <div class="space-y-4">
+
+            <div class="image-frame aspect-[3/4]">
+                <img src="https://drive.google.com/thumbnail?id=1nuJ8xuejohzVU00FBkd5sJHUx-twLgt-&sz=w1000"
+                     alt="Legal Research"
+                     class="w-full h-full object-cover grayscale">
+            </div>
+
+            <div class="image-frame aspect-square">
+                <img src="https://lh3.googleusercontent.com/d/153zbdd742wEkWK7t9tI6p6koaygkv1Jo"
+                     alt="Networking"
+                     class="w-full h-full object-cover grayscale">
+            </div>
+
         </div>
-    </footer>
+
+
+        <div class="pt-10 space-y-4">
+
+            <div class="image-frame aspect-square">
+                <img src="https://drive.google.com/thumbnail?id=1fkKdKgxIu916nsxBGCjljhvH1QpUvtAw&sz=w1000"
+                     alt="Advocacy"
+                     class="w-full h-full object-cover grayscale">
+            </div>
+
+            <div class="image-frame aspect-[3/4]">
+                <img src="https://drive.google.com/thumbnail?id=18DLcC6q1LwDIasIvXOFfXAJPm3Z_nNIC&sz=w1000"
+                     alt="Executive Presence"
+                     class="w-full h-full object-cover grayscale">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CLOSING STATEMENT
+========================================================= -->
+
+<section class="dark-section">
+
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-28">
+
+        <div class="max-w-4xl">
+
+            <p class="eyebrow text-stone-500 mb-7">
+                Closing Thesis
+            </p>
+
+            <h2 class="serif text-4xl md:text-6xl leading-tight font-normal">
+                Building legal and institutional systems
+                that are capable of outliving the people
+                who first designed them.
+            </h2>
+
+            <div class="mt-10 flex flex-wrap gap-5">
+
+                <a href="https://bit.ly/4kQR907"
+                   target="_blank"
+                   class="inline-flex items-center border border-stone-700 px-6 py-3 text-[10px] uppercase tracking-[.2em] hover:bg-white hover:text-black transition">
+                    LinkedIn
+                </a>
+
+                <a href="mailto:simiajayi08@gmail.com"
+                   class="inline-flex items-center border border-stone-700 px-6 py-3 text-[10px] uppercase tracking-[.2em] hover:bg-white hover:text-black transition">
+                    Contact
+                </a>
+
+                <a href="https://drive.google.com/file/d/1VrmWZRMjwt6fK8Qy_qBEHmhK7ubODIhD/view?usp=drive_link"
+                   target="_blank"
+                   class="inline-flex items-center border border-stone-700 px-6 py-3 text-[10px] uppercase tracking-[.2em] hover:bg-white hover:text-black transition">
+                    Curriculum Vitae
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="bg-[#111111] border-t border-stone-800">
+
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-8 flex flex-col md:flex-row justify-between gap-5 text-[9px] uppercase tracking-[.2em] text-stone-500">
+
+        <span>
+            © 2026 Similoluwa Esther Ajayi
+        </span>
+
+        <span>
+            Executive Archive · Nigeria
+        </span>
+
+    </div>
+
+</footer>
+
+</main>
+
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('open');
+    }
+</script>
 
 </body>
 </html>
